@@ -1,0 +1,99 @@
+package main
+
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"github.com/ai-zelenin/geo-host/pkg/geo"
+	"github.com/ai-zelenin/geo-host/pkg/pgds"
+	"github.com/ai-zelenin/geo-host/pkg/server"
+	"github.com/go-pg/pg/v10"
+	"io/ioutil"
+	"log"
+	"os"
+)
+
+type GlobalPoints struct {
+	ID       int64
+	Name     string
+	Location *geo.GeographicPoint
+	Lat      float64
+	Lon      float64
+	Qk10     int64  `pg:"qk_10"`
+	Qk4      string `pg:"qk_4"`
+}
+
+func main() {
+	ctx := context.Background()
+	dsn := "postgres://postgres:postgis@localhost:5432/postgres?sslmode=disable"
+	gs := geo.NewGeographicSystem(geo.DefaultGeoSystemConfig)
+	ds, err := pgds.NewPostGISDataSource(ctx, dsn, gs, func(obj *pgds.Cluster) map[string]interface{} {
+		var iconContent string
+		if obj.Count > 1 {
+			iconContent = fmt.Sprintf("%d", obj.Count)
+		} else {
+			iconContent = obj.Properties["name"].(string)
+		}
+		return map[string]interface{}{
+			"hintContent": obj.ID,
+			"iconContent": iconContent,
+			"options": map[string]interface{}{
+				"preset": "islands#blackStretchyIcon",
+			},
+		}
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+	cfg := &server.Config{
+		ServerAddr: ":8080",
+		StaticDir:  "./front",
+	}
+	srv := server.NewServer(cfg, ds, gs)
+	err = srv.Start()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func ImportPoints(db *pg.DB) {
+	var points = make([]*GlobalPoints, 0)
+	err := db.Model(&points).Select()
+	if err != nil {
+		panic(err)
+	}
+	data, err := json.MarshalIndent(points, "", "\t")
+	if err != nil {
+		panic(err)
+	}
+	err = ioutil.WriteFile("metro.json", data, os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
+}
+
+func ExportPoints(ds geo.DataSource) {
+	data, err := ioutil.ReadFile("metro.json")
+	if err != nil {
+		panic(err)
+	}
+	points := make([]*GlobalPoints, 0)
+	err = json.Unmarshal(data, &points)
+	if err != nil {
+		panic(err)
+	}
+	for _, point := range points {
+		err = ds.StoreGeoData(context.Background(), &pgds.GeoObject{
+			ID:  point.ID,
+			Lat: point.Location.Latitude,
+			Lon: point.Location.Longitude,
+			Properties: map[string]interface{}{
+				"name": point.Name,
+			},
+		})
+		if err != nil {
+			panic(err)
+		}
+	}
+}
