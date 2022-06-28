@@ -2,8 +2,10 @@ package server
 
 import (
 	"context"
+	"fmt"
 	"github.com/ai-zelenin/geo-host/pkg/geo"
 	"net/http"
+	"time"
 )
 
 type YandexROMHandler struct {
@@ -39,7 +41,11 @@ func (y *YandexROMHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
+	now := time.Now()
 	w.Header().Set("Content-Type", "application/javascript")
+	w.Header().Set("Cache-Control", "max-age=1200")
+	w.Header().Set("Last-Modified", time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC).Format(http.TimeFormat))
+	w.Header().Set("Etag", fmt.Sprintf("%d-%d-%d-%d", mr.TileXMin, mr.TileXMax, mr.TileYMin, mr.TileYMax))
 	_, _ = w.Write(data)
 }
 

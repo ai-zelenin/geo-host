@@ -19,15 +19,28 @@ func (s *GeoSystemSuite) SetupTest() {
 	s.gs = NewGeographicSystem(DefaultGeoSystemConfig)
 }
 
+//  9902,5134,9906,5138 14
 func (s *GeoSystemSuite) TestQuadKeyMask() {
-	qk := s.gs.QuadKeySystem.TileXYToQuadKey(618, 320, 10)
-	bMask := s.gs.QuadKeySystem.CreateMask(qk, 10, 3)
-	min, max := s.gs.QuadKeySystem.QuadKeyRange(qk)
-	fmt.Println(qk)
-	fmt.Println(min, max)
-	fmt.Println(min.Int64(), max.Int64())
-	fmt.Println(bMask)
-	fmt.Println(bMask.Int64())
+	mr, err := ParseRequest("", "9902,5134,9906,5138", "14", "", "true", "2")
+	s.Nil(err)
+	fmt.Println(mr)
+	//qk := s.gs.QuadKeySystem.TileXYToQuadKey(9904, 5135, 14)
+	//bMask := s.gs.QuadKeySystem.CreateMask(qk, 14, 1)
+	//min, max := s.gs.QuadKeySystem.QuadKeyRange(qk)
+	//fmt.Println(qk)
+	//fmt.Println(min, max)
+	//fmt.Println(min.Int64(), max.Int64())
+	//fmt.Println(bMask)
+	//fmt.Println(bMask.Int64())
+	//
+	//qkTarget := QuadKey("012031010112222133103011")
+	//fmt.Println(qkTarget)
+	//
+	//cluster := qkTarget.Int64() & bMask.Int64()
+	//clusterQK := NewQuadKeyFromInt64(cluster)
+	//fmt.Println(clusterQK)
+	//PrintTable(qkTarget.Bits(), bMask.Bits(), clusterQK.Bits())
+	//PrintTable(qkTarget.String(), bMask.String(), clusterQK.String())
 }
 
 //func (s *GeoSystemSuite) TestGlobalPixelConverter() {

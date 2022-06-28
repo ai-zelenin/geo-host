@@ -1,6 +1,22 @@
 ymaps.ready(['projection.wgs84Mercator', 'projection.sphericalMercator']).then(function () {
-    const remoteObjectManager = new ymaps.RemoteObjectManager('/api/v1/yandex?tiles=%t&bbox=%b&zoom=%z&debug=true&clusterLevel=2', {});
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    let debug = params.get("debug");
+    let clusterLevel = params.get("clusterLevel");
+    if (debug === ""){
+        debug = "false"
+    }
+    if (clusterLevel === ""){
+        clusterLevel = "1"
+    }
+    console.log(window.location);
+    const remoteObjectManager = new ymaps.RemoteObjectManager(`/api/v1/yandex?tiles=%t&zoom=%z&debug=${debug}&clusterLevel=${clusterLevel}`, {
+        "paddingTemplate": "cb_%t_%z"
+    });
     remoteObjectManager.setFilter(function (object) {
+        if (object.properties.iconContent !== "") {
+            console.log(object.properties.iconContent)
+        }
         for (let key in object.properties.options) {
             object.options[key] = object.properties.options[key]
         }
@@ -8,14 +24,14 @@ ymaps.ready(['projection.wgs84Mercator', 'projection.sphericalMercator']).then(f
     });
     const mapSettings = {
         center: [55.756363, 37.623270],
-        zoom: 10,
-        controls: ['zoomControl', 'searchControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl']
+        zoom: 14,
+        controls: ['zoomControl', 'searchControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
     }
     const projSettings = {
         projection: ymaps.projection.sphericalMercator
     }
     const map = new ymaps.Map('map', mapSettings);
     map.geoObjects.add(remoteObjectManager);
-    map.controls.get('zoomControl').options.set({ size: 'small' });
+    map.controls.get('zoomControl').options.set({size: 'small'});
 
 });

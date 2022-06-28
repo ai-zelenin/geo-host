@@ -84,6 +84,32 @@ func (q *QuadKeySystem) Contains(point QuadKey, tile QuadKey) bool {
 	return false
 }
 
+func (q *QuadKeySystem) Base10Delta(len int64) int64 {
+	diff := q.maxZoom - len
+	return (1 << diff * 2) + 1
+}
+
+func (q *QuadKeySystem) ForEachZoom(qk QuadKey, cb func(x, y, z int64) error) error {
+	n := len(qk)
+	reduce := 0
+	for {
+		newLen := int64(n - reduce)
+		if newLen <= q.minZoom {
+			return nil
+		}
+		qk = qk[:newLen]
+		tx, ty, err := q.QuadKeyToTileXY(qk)
+		if err != nil {
+			return err
+		}
+		err = cb(tx, ty, newLen)
+		if err != nil {
+			return err
+		}
+		reduce++
+	}
+}
+
 func (q *QuadKeySystem) CreateMask(qk QuadKey, zoom int64, clusterLevel int64) QuadKey {
 	var mask = qk.Copy()
 	if clusterLevel <= 0 {

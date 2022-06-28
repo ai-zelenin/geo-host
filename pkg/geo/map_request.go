@@ -85,6 +85,22 @@ func ParseRequest(coordsStr, tileStr, zoomStr, callbackID, debugStr, clusterLeve
 	}, nil
 }
 
+func (r *MapRequest) TilesNumber() int64 {
+	return (r.TileXMax - r.TileXMin) * (r.TileYMax - r.TileYMin)
+}
+
+func (r *MapRequest) IterateTiles(cb func(x, y int64) error) error {
+	for i := r.TileXMin; i <= r.TileXMax; i++ {
+		for j := r.TileYMin; j <= r.TileYMax; j++ {
+			err := cb(i, j)
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return nil
+}
+
 func (r *MapRequest) AsPolygon() *GeographicPolygon {
 	return &GeographicPolygon{
 		Points: []*GeographicPoint{

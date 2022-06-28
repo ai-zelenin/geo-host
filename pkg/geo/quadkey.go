@@ -31,6 +31,10 @@ func (q QuadKey) Copy() QuadKey {
 	return qk
 }
 
+func (q QuadKey) Len() int64 {
+	return int64(len(q))
+}
+
 func (q QuadKey) View() string {
 	return fmt.Sprintf("%s:%20d %s:%s %s:%s",
 		Colorize(colorYellow, "base-10"), q.Int64(),

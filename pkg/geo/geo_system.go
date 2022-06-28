@@ -41,42 +41,39 @@ func (g *GeographicSystem) DrawROMBBox(rom *MapRequest, fc *FeatureCollection) e
 }
 
 func (g *GeographicSystem) DrawROMTiles(rom *MapRequest, fc *FeatureCollection) error {
-	for i := rom.TileXMin; i <= rom.TileXMax; i++ {
-		for j := rom.TileYMin; j <= rom.TileYMax; j++ {
-			tilePolygon := g.TileXYToPolygon(i, j, rom.Zoom)
-			id := fmt.Sprintf("tx:%d ty:%d", i, j)
-			qk := g.QuadKeySystem.TileXYToQuadKey(i, j, rom.Zoom)
-			minQk, maxQk := g.QuadKeySystem.QuadKeyRange(qk)
-			err := fc.Add(id, tilePolygon, map[string]interface{}{
-				"hintContent":  id,
-				"quadKey":      qk.String(),
-				"leftQuadKey":  minQk.String(),
-				"rightQuadKey": maxQk.String(),
-				"options": map[string]interface{}{
-					"fillColor": fmt.Sprintf("rgba(27, 125, 27, 0.2)"),
-				},
-			})
-			if err != nil {
-				return err
-			}
-		}
-	}
-	return nil
+	return rom.IterateTiles(func(x, y int64) error {
+		tilePolygon := g.TileXYToPolygon(x, y, rom.Zoom)
+		id := fmt.Sprintf("tx:%d ty:%d", x, y)
+		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, rom.Zoom)
+		minQk, maxQk := g.QuadKeySystem.QuadKeyRange(qk)
+		return fc.Add(id, tilePolygon, map[string]interface{}{
+			"hintContent":  id,
+			"quadKey":      qk.String(),
+			"leftQuadKey":  minQk.String(),
+			"rightQuadKey": maxQk.String(),
+			"options": map[string]interface{}{
+				"fillColor": fmt.Sprintf("rgba(27, 125, 27, 0.2)"),
+			},
+		})
+
+	})
 }
 
-func (g *GeographicSystem) MRToQuadKeys(rom *MapRequest) (lqk, rqk QuadKey) {
-	lqk = g.QuadKeySystem.TileXYToQuadKey(rom.TileXMin, rom.TileYMin, rom.Zoom)
-	rqk = g.QuadKeySystem.TileXYToQuadKey(rom.TileXMax, rom.TileYMax, rom.Zoom)
-	return lqk, rqk
-}
-
-func (g *GeographicSystem) MRToBoundsAndClusterMask(rom *MapRequest) (lqkMin, rqkMax, nextLevelMask QuadKey) {
-	lqk := g.QuadKeySystem.TileXYToQuadKey(rom.TileXMin, rom.TileYMin, rom.Zoom)
-	rqk := g.QuadKeySystem.TileXYToQuadKey(rom.TileXMax, rom.TileYMax, rom.Zoom)
-	lqkMin, _ = g.QuadKeySystem.QuadKeyRange(lqk)
-	_, rqkMax = g.QuadKeySystem.QuadKeyRange(rqk)
-	nextLevelMask = g.QuadKeySystem.CreateMask(lqk, rom.Zoom, rom.ClusterLevel)
-	return lqkMin, rqkMax, nextLevelMask
+func (g *GeographicSystem) MRToTiles(rom *MapRequest) (tiles []Tile, lqkMin, rqkMax QuadKey, tileBucketBitSize int64) {
+	result := make([]Tile, 0, rom.TilesNumber())
+	_ = rom.IterateTiles(func(x, y int64) error {
+		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, rom.Zoom)
+		result = append(result, Tile{
+			X:       x,
+			Y:       y,
+			Zoom:    rom.Zoom,
+			QuadKey: qk,
+		})
+		return nil
+	})
+	lqkMin, _ = g.QuadKeySystem.QuadKeyRange(result[0].QuadKey)
+	_, rqkMax = g.QuadKeySystem.QuadKeyRange(result[len(result)-1].QuadKey)
+	return result, lqkMin, rqkMax, g.QuadKeySystem.Base10Delta(rom.Zoom)
 }
 
 func (g *GeographicSystem) TileXYToPoint(tx, ty int64, z int64) *GeographicPoint {
