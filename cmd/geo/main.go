@@ -7,21 +7,11 @@ import (
 	"github.com/ai-zelenin/geo-host/pkg/geo"
 	"github.com/ai-zelenin/geo-host/pkg/pgds"
 	"github.com/ai-zelenin/geo-host/pkg/server"
-	"github.com/go-pg/pg/v10"
+	"github.com/uptrace/bun"
 	"io/ioutil"
 	"log"
 	"os"
 )
-
-type GlobalPoints struct {
-	ID       int64
-	Name     string
-	Location *geo.GeographicPoint
-	Lat      float64
-	Lon      float64
-	Qk10     int64  `pg:"qk_10"`
-	Qk4      string `pg:"qk_4"`
-}
 
 func main() {
 	ctx := context.Background()
@@ -35,10 +25,6 @@ func main() {
 			for _, child := range obj.ClusterData {
 				balloonContent += fmt.Sprintf("%s<br>\n", child.Properties["name"])
 			}
-			//"options": map[string]interface{}{
-			//				"fillColor": fmt.Sprintf("rgba(27, 125, 27, 0.2)"),
-			//			},
-
 		} else {
 			iconContent = obj.Properties["name"].(string)
 		}
@@ -55,7 +41,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	ExportPoints(ds, gs)
 	cfg := &server.Config{
 		ServerAddr: ":8080",
 		StaticDir:  "./front",
@@ -68,9 +53,9 @@ func main() {
 
 }
 
-func ImportPoints(db *pg.DB) {
-	var points = make([]*GlobalPoints, 0)
-	err := db.Model(&points).Select()
+func ImportPoints(db *bun.DB) {
+	var points = make([]*pgds.GeoObject, 0)
+	err := db.NewSelect().Model(&points).Scan(context.Background(), &points)
 	if err != nil {
 		panic(err)
 	}
@@ -89,22 +74,13 @@ func ExportPoints(ds geo.DataSource, gs *geo.GeographicSystem) {
 	if err != nil {
 		panic(err)
 	}
-	points := make([]*GlobalPoints, 0)
+	points := make([]*pgds.GeoObject, 0)
 	err = json.Unmarshal(data, &points)
 	if err != nil {
 		panic(err)
 	}
 	for _, point := range points {
-		err = ds.StoreGeoData(context.Background(), &pgds.GeoObject{
-			ID:    point.ID,
-			Lat:   point.Location.Latitude,
-			Lon:   point.Location.Longitude,
-			Point: point.Location,
-			Properties: map[string]interface{}{
-				"name": point.Name,
-				"qk4":  gs.WGS84ToQuadKey(point.Location.Latitude, point.Location.Longitude).String(),
-			},
-		})
+		err = ds.StoreGeoData(context.Background(), point)
 		if err != nil {
 			panic(err)
 		}

@@ -33,7 +33,7 @@ type Cluster struct {
 
 type PostGISDataSource struct {
 	gs     *geo.GeographicSystem
-	db     *bun.DB
+	DB     *bun.DB
 	mapper PropertiesMapper
 }
 
@@ -48,31 +48,35 @@ func NewPostGISDataSource(ctx context.Context, dsn string, gs *geo.GeographicSys
 	if err != nil {
 		return nil, err
 	}
+	_, err = db.NewCreateIndex().Model(new(GeoObject)).Index("quad_key_btree").Column("quad_key").IfNotExists().Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
 	db.AddQueryHook(bundebug.NewQueryHook(bundebug.WithVerbose(true)))
 	return &PostGISDataSource{
 		gs:     gs,
-		db:     db,
+		DB:     db,
 		mapper: mapper,
 	}, nil
 }
 
 func (p *PostGISDataSource) LoadMapView(ctx context.Context, mr *geo.MapRequest, fc *geo.FeatureCollection) error {
 	tiles := p.gs.MRToTiles(mr)
-	bitDelta := p.gs.QuadKeySystem.BitDelta(mr.Zoom)
 	tileIDs := make([]int64, 0, len(tiles))
 	for id := range tiles {
 		tileIDs = append(tileIDs, id)
 	}
-	objects := make([]*Cluster, 0, 25*4*4)
-	subq := p.db.NewSelect().Model((*GeoObject)(nil))
+	bitDelta := p.gs.QuadKeySystem.BitDelta(mr.Zoom)
+	clusterShift := p.gs.QuadKeySystem.BitDelta(mr.Zoom + mr.ClusterDepth)
+	objects := make([]*Cluster, 0, mr.TilesNumber()*(mr.ClusterDepth*4))
+	subq := p.DB.NewSelect().Model((*GeoObject)(nil))
 	subq.ColumnExpr("COUNT(id) AS count")
 	subq.ColumnExpr("MIN(id) AS min_id")
-	subq.ColumnExpr("json_agg(json_build_object('id',id,'properties',json_build_object('name',properties->>'name'))) as cluster_data")
-	subq.ColumnExpr("quad_key >> ? as tile_id", p.gs.QuadKeySystem.BitDelta(mr.Zoom+2))
+	subq.ColumnExpr("quad_key >> ? as tile_id", clusterShift)
 	subq.Where("quad_key >> ? in (?)", bitDelta, bun.In(tileIDs))
 	subq.Order("tile_id")
 	subq.Group("tile_id")
-	q := p.db.NewSelect()
+	q := p.DB.NewSelect()
 	q.TableExpr("(?) AS cluster", subq)
 	q.Join("left join geo_objects gp on gp.id = cluster.min_id")
 	err := q.Scan(ctx, &objects)
@@ -110,7 +114,7 @@ func (p *PostGISDataSource) StoreGeoData(ctx context.Context, d interface{}) err
 	}
 	qk := p.gs.WGS84ToQuadKey(gObj.Lat, gObj.Lon)
 	gObj.QuadKey = qk.Int64()
-	tx, err := p.db.BeginTx(ctx, nil)
+	tx, err := p.DB.BeginTx(ctx, nil)
 	if err != nil {
 		return err
 	}

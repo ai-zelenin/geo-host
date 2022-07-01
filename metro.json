@@ -1,2162 +1,3602 @@
 [
 	{
-		"ID": 428,
-		"Name": "ЗИЛ",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.698333,
-			"Longitude": 37.648333
-		}
-	},
-	{
-		"ID": 429,
-		"Name": "Верхние Котлы",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.69,
-			"Longitude": 37.618889
-		}
-	},
-	{
-		"ID": 430,
-		"Name": "Крымская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.690038,
-			"Longitude": 37.605
-		}
-	},
-	{
-		"ID": 431,
-		"Name": "Площадь Гагарина",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.706944,
-			"Longitude": 37.585833
-		}
-	},
-	{
-		"ID": 432,
-		"Name": "Лужники",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.720278,
-			"Longitude": 37.563056
-		}
-	},
-	{
-		"ID": 433,
-		"Name": "Кутузовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.740833,
-			"Longitude": 37.533333
-		}
-	},
-	{
-		"ID": 434,
-		"Name": "Деловой центр",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.747222,
-			"Longitude": 37.532222
-		}
-	},
-	{
-		"ID": 435,
-		"Name": "Шелепиха",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.7575,
-			"Longitude": 37.525556
-		}
-	},
-	{
-		"ID": 436,
-		"Name": "Хорошево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.777222,
-			"Longitude": 37.507222
-		}
-	},
-	{
-		"ID": 437,
-		"Name": "Зорге",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.787778,
-			"Longitude": 37.504444
-		}
-	},
-	{
-		"ID": 438,
-		"Name": "Панфиловская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.799167,
-			"Longitude": 37.498889
-		}
-	},
-	{
-		"ID": 439,
-		"Name": "Стрешнево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.813611,
-			"Longitude": 37.486944
-		}
-	},
-	{
-		"ID": 440,
-		"Name": "Балтийская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.825833,
-			"Longitude": 37.496111
-		}
-	},
-	{
-		"ID": 441,
-		"Name": "Коптево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.839637,
-			"Longitude": 37.520037
-		}
-	},
-	{
-		"ID": 442,
-		"Name": "Лихоборы",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.847222,
-			"Longitude": 37.551389
-		}
-	},
-	{
-		"ID": 203,
-		"Name": "Бульвар Рокоссовского",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.814916,
-			"Longitude": 37.732227
-		}
-	},
-	{
-		"ID": 204,
-		"Name": "Черкизовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.802787,
-			"Longitude": 37.744863
-		}
-	},
-	{
-		"ID": 205,
-		"Name": "Преображенская площадь",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.796322,
-			"Longitude": 37.713582
-		}
-	},
-	{
-		"ID": 206,
-		"Name": "Сокольники",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.789282,
-			"Longitude": 37.679895
-		}
-	},
-	{
-		"ID": 207,
-		"Name": "Красносельская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.780014,
-			"Longitude": 37.666097
-		}
-	},
-	{
-		"ID": 208,
-		"Name": "Комсомольская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.774072,
-			"Longitude": 37.654565
-		}
-	},
-	{
-		"ID": 209,
-		"Name": "Красные ворота",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.768307,
-			"Longitude": 37.6478
-		}
-	},
-	{
-		"ID": 210,
-		"Name": "Чистые пруды",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.76499,
-			"Longitude": 37.638293
-		}
-	},
-	{
-		"ID": 211,
-		"Name": "Лубянка",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.759889,
-			"Longitude": 37.625336
-		}
-	},
-	{
-		"ID": 212,
-		"Name": "Охотный ряд",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.757228,
-			"Longitude": 37.615078
-		}
-	},
-	{
-		"ID": 213,
-		"Name": "Библиотека им.Ленина",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.752123,
-			"Longitude": 37.610388
-		}
-	},
-	{
-		"ID": 214,
-		"Name": "Кропоткинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.745297,
-			"Longitude": 37.604217
-		}
-	},
-	{
-		"ID": 215,
-		"Name": "Парк культуры",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.736163,
-			"Longitude": 37.595027
-		}
-	},
-	{
-		"ID": 216,
-		"Name": "Фрунзенская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.727462,
-			"Longitude": 37.58022
-		}
-	},
-	{
-		"ID": 217,
-		"Name": "Спортивная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.722388,
-			"Longitude": 37.562041
-		}
-	},
-	{
-		"ID": 218,
-		"Name": "Воробьевы горы",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.709169,
-			"Longitude": 37.557293
-		}
-	},
-	{
 		"ID": 219,
-		"Name": "Университет",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286359783361,
+		"Lat": 55.69329,
+		"Lon": 37.534511,
+		"Properties": {
+			"name": "Университет",
+			"qk4": "012031010121302003133001"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.69329,
 			"Longitude": 37.534511
 		}
 	},
 	{
 		"ID": 220,
-		"Name": "Проспект Вернадского",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286358413450,
+		"Lat": 55.676549,
+		"Lon": 37.504584,
+		"Properties": {
+			"name": "Проспект Вернадского",
+			"qk4": "012031010121230311002022"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.676549,
 			"Longitude": 37.504584
 		}
 	},
 	{
 		"ID": 221,
-		"Name": "Юго-Западная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286358153755,
+		"Lat": 55.663146,
+		"Lon": 37.482852,
+		"Properties": {
+			"name": "Юго-Западная",
+			"qk4": "012031010121223311220123"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.663146,
 			"Longitude": 37.482852
 		}
 	},
 	{
-		"ID": 222,
-		"Name": "Тропарево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.6459,
-			"Longitude": 37.4725
-		}
-	},
-	{
 		"ID": 223,
-		"Name": "Румянцево",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286382313709,
+		"Lat": 55.633,
+		"Lon": 37.4419,
+		"Properties": {
+			"name": "Румянцево",
+			"qk4": "012031010123020000003231"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.633,
 			"Longitude": 37.4419
 		}
 	},
 	{
 		"ID": 224,
-		"Name": "Саларьево",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286371212908,
+		"Lat": 55.6227,
+		"Lon": 37.424,
+		"Properties": {
+			"name": "Саларьево",
+			"qk4": "012031010122131221321230"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.6227,
 			"Longitude": 37.424
 		}
 	},
 	{
 		"ID": 225,
-		"Name": "Речной вокзал",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286246336445,
+		"Lat": 55.854152,
+		"Lon": 37.476728,
+		"Properties": {
+			"name": "Речной вокзал",
+			"qk4": "012031010103001102132331"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.854152,
 			"Longitude": 37.476728
 		}
 	},
 	{
 		"ID": 226,
-		"Name": "Водный стадион",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286247614222,
+		"Lat": 55.838978,
+		"Lon": 37.487515,
+		"Properties": {
+			"name": "Водный стадион",
+			"qk4": "012031010103012022130032"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.838978,
 			"Longitude": 37.487515
 		}
 	},
 	{
-		"ID": 227,
-		"Name": "Войковская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.818923,
-			"Longitude": 37.497791
-		}
-	},
-	{
 		"ID": 228,
-		"Name": "Сокол",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286255718344,
+		"Lat": 55.805564,
+		"Lon": 37.515245,
+		"Properties": {
+			"name": "Сокол",
+			"qk4": "012031010103211010333020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.805564,
 			"Longitude": 37.515245
 		}
 	},
 	{
 		"ID": 229,
-		"Name": "Аэропорт",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286258713069,
+		"Lat": 55.800441,
+		"Lon": 37.530477,
+		"Properties": {
+			"name": "Аэропорт",
+			"qk4": "012031010103300200013231"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.800441,
 			"Longitude": 37.530477
 		}
 	},
 	{
 		"ID": 230,
-		"Name": "Динамо",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286259426441,
+		"Lat": 55.789704,
+		"Lon": 37.558212,
+		"Properties": {
+			"name": "Динамо",
+			"qk4": "012031010103303032102021"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.789704,
 			"Longitude": 37.558212
 		}
 	},
 	{
 		"ID": 231,
-		"Name": "Белорусская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286261788790,
+		"Lat": 55.777439,
+		"Lon": 37.582107,
+		"Properties": {
+			"name": "Белорусская",
+			"qk4": "012031010103330033001312"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.777439,
 			"Longitude": 37.582107
 		}
 	},
 	{
-		"ID": 232,
-		"Name": "Маяковская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.769808,
-			"Longitude": 37.596192
-		}
-	},
-	{
 		"ID": 233,
-		"Name": "Тверская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286262569670,
+		"Lat": 55.765343,
+		"Lon": 37.603918,
+		"Properties": {
+			"name": "Тверская",
+			"qk4": "012031010103333031223012"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.765343,
 			"Longitude": 37.603918
 		}
 	},
 	{
 		"ID": 234,
-		"Name": "Театральная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286307512431,
+		"Lat": 55.758808,
+		"Lon": 37.61768,
+		"Properties": {
+			"name": "Театральная",
+			"qk4": "012031010112222222001233"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.758808,
 			"Longitude": 37.61768
 		}
 	},
 	{
 		"ID": 235,
-		"Name": "Новокузнецкая",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397594083,
+		"Lat": 55.742391,
+		"Lon": 37.62928,
+		"Properties": {
+			"name": "Новокузнецкая",
+			"qk4": "012031010130002102213203"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.742391,
 			"Longitude": 37.62928
 		}
 	},
 	{
 		"ID": 236,
-		"Name": "Павелецкая",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286399188881,
+		"Lat": 55.729741,
+		"Lon": 37.638693,
+		"Properties": {
+			"name": "Павелецкая",
+			"qk4": "012031010130020113332101"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.729741,
 			"Longitude": 37.638693
 		}
 	},
 	{
-		"ID": 237,
-		"Name": "Автозаводская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.706634,
-			"Longitude": 37.657008
-		}
-	},
-	{
 		"ID": 238,
-		"Name": "Технопарк",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286406959644,
+		"Lat": 55.695,
+		"Lon": 37.664167,
+		"Properties": {
+			"name": "Технопарк",
+			"qk4": "012031010130212001020130"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.695,
 			"Longitude": 37.664167
 		}
 	},
 	{
 		"ID": 239,
-		"Name": "Коломенская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286408572282,
+		"Lat": 55.677423,
+		"Lon": 37.663719,
+		"Properties": {
+			"name": "Коломенская",
+			"qk4": "012031010130230022311322"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.677423,
 			"Longitude": 37.663719
 		}
 	},
 	{
 		"ID": 240,
-		"Name": "Каширская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286430842161,
+		"Lat": 55.655745,
+		"Lon": 37.649683,
+		"Properties": {
+			"name": "Каширская",
+			"qk4": "012031010132001013310301"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.655745,
 			"Longitude": 37.649683
 		}
 	},
 	{
 		"ID": 241,
-		"Name": "Кантемировская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286431580409,
+		"Lat": 55.636107,
+		"Lon": 37.656218,
+		"Properties": {
+			"name": "Кантемировская",
+			"qk4": "012031010132003330003321"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.636107,
 			"Longitude": 37.656218
 		}
 	},
 	{
 		"ID": 242,
-		"Name": "Царицыно",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286433888947,
+		"Lat": 55.620982,
+		"Lon": 37.669612,
+		"Properties": {
+			"name": "Царицыно",
+			"qk4": "012031010132030233222303"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.620982,
 			"Longitude": 37.669612
 		}
 	},
 	{
-		"ID": 243,
-		"Name": "Орехово",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.61269,
-			"Longitude": 37.695214
-		}
-	},
-	{
-		"ID": 244,
-		"Name": "Домодедовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.610131,
-			"Longitude": 37.717111
-		}
-	},
-	{
 		"ID": 245,
-		"Name": "Красногвардейская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286437828306,
+		"Lat": 55.614075,
+		"Lon": 37.742697,
+		"Properties": {
+			"name": "Красногвардейская",
+			"qk4": "012031010132123301123102"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.614075,
 			"Longitude": 37.742697
 		}
 	},
 	{
 		"ID": 246,
-		"Name": "Алма-Атинская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286436571794,
+		"Lat": 55.63349,
+		"Lon": 37.765678,
+		"Properties": {
+			"name": "Алма-Атинская",
+			"qk4": "012031010132112332222102"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.63349,
 			"Longitude": 37.765678
 		}
 	},
 	{
-		"ID": 247,
-		"Name": "Щелковская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.809962,
-			"Longitude": 37.798261
+		"ID": 429,
+		"QuadKey": 27286405950485,
+		"Lat": 55.69,
+		"Lon": 37.618889,
+		"Properties": {
+			"name": "Верхние Котлы",
+			"qk4": "012031010130202022300111"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.69,
+			"Longitude": 37.618889
 		}
 	},
 	{
-		"ID": 248,
-		"Name": "Первомайская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.794376,
-			"Longitude": 37.799364
+		"ID": 430,
+		"QuadKey": 27286361142968,
+		"Lat": 55.690038,
+		"Lon": 37.605,
+		"Properties": {
+			"name": "Крымская",
+			"qk4": "012031010121313033122320"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.690038,
+			"Longitude": 37.605
 		}
 	},
 	{
-		"ID": 249,
-		"Name": "Измайловская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.787713,
-			"Longitude": 37.779896
+		"ID": 431,
+		"QuadKey": 27286360362035,
+		"Lat": 55.706944,
+		"Lon": 37.585833,
+		"Properties": {
+			"name": "Площадь Гагарина",
+			"qk4": "012031010121310100300303"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.706944,
+			"Longitude": 37.585833
 		}
 	},
 	{
-		"ID": 250,
-		"Name": "Партизанская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.788401,
-			"Longitude": 37.74882
+		"ID": 432,
+		"QuadKey": 27286353456046,
+		"Lat": 55.720278,
+		"Lon": 37.563056,
+		"Properties": {
+			"name": "Лужники",
+			"qk4": "012031010121121322232232"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.720278,
+			"Longitude": 37.563056
 		}
 	},
 	{
-		"ID": 251,
-		"Name": "Семеновская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.783096,
-			"Longitude": 37.719289
+		"ID": 434,
+		"QuadKey": 27286351026232,
+		"Lat": 55.747222,
+		"Lon": 37.532222,
+		"Properties": {
+			"name": "Деловой центр",
+			"qk4": "012031010121100221200320"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.747222,
+			"Longitude": 37.532222
 		}
 	},
 	{
-		"ID": 252,
-		"Name": "Электрозаводская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.782057,
-			"Longitude": 37.7053
+		"ID": 435,
+		"QuadKey": 27286258577122,
+		"Lat": 55.7575,
+		"Lon": 37.525556,
+		"Properties": {
+			"name": "Шелепиха",
+			"qk4": "012031010103233332323202"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.7575,
+			"Longitude": 37.525556
 		}
 	},
 	{
-		"ID": 253,
-		"Name": "Бауманская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.772405,
-			"Longitude": 37.67904
+		"ID": 436,
+		"QuadKey": 27286257661433,
+		"Lat": 55.777222,
+		"Lon": 37.507222,
+		"Properties": {
+			"name": "Хорошево",
+			"qk4": "012031010103230133113321"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.777222,
+			"Longitude": 37.507222
 		}
 	},
 	{
-		"ID": 254,
-		"Name": "Площадь Революции",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.756741,
-			"Longitude": 37.62236
+		"ID": 437,
+		"QuadKey": 27286256175064,
+		"Lat": 55.787778,
+		"Lon": 37.504444,
+		"Properties": {
+			"name": "Зорге",
+			"qk4": "012031010103212310133120"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.787778,
+			"Longitude": 37.504444
 		}
 	},
 	{
-		"ID": 255,
-		"Name": "Курская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.758564,
-			"Longitude": 37.659039
+		"ID": 439,
+		"QuadKey": 27286249712819,
+		"Lat": 55.813611,
+		"Lon": 37.486944,
+		"Properties": {
+			"name": "Стрешнево",
+			"qk4": "012031010103032022302303"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.813611,
+			"Longitude": 37.486944
 		}
 	},
 	{
-		"ID": 256,
-		"Name": "Арбатская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.752312,
-			"Longitude": 37.60349
+		"ID": 440,
+		"QuadKey": 27286249209678,
+		"Lat": 55.825833,
+		"Lon": 37.496111,
+		"Properties": {
+			"name": "Балтийская",
+			"qk4": "012031010103030033331032"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.825833,
+			"Longitude": 37.496111
 		}
 	},
 	{
-		"ID": 257,
-		"Name": "Смоленская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.747713,
-			"Longitude": 37.583802
+		"ID": 441,
+		"QuadKey": 27286247935594,
+		"Lat": 55.839637,
+		"Lon": 37.520037,
+		"Properties": {
+			"name": "Коптево",
+			"qk4": "012031010103013120321222"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.839637,
+			"Longitude": 37.520037
 		}
 	},
 	{
-		"ID": 258,
-		"Name": "Киевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.743117,
-			"Longitude": 37.564132
+		"ID": 442,
+		"QuadKey": 27286250597030,
+		"Lat": 55.847222,
+		"Lon": 37.551389,
+		"Properties": {
+			"name": "Лихоборы",
+			"qk4": "012031010103101202222212"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.847222,
+			"Longitude": 37.551389
 		}
 	},
 	{
-		"ID": 259,
-		"Name": "Парк Победы",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.735679,
-			"Longitude": 37.516865
+		"ID": 205,
+		"QuadKey": 27286309100180,
+		"Lat": 55.796322,
+		"Lon": 37.713582,
+		"Properties": {
+			"name": "Преображенская площадь",
+			"qk4": "012031010112300231222110"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.796322,
+			"Longitude": 37.713582
 		}
 	},
 	{
-		"ID": 260,
-		"Name": "Славянский бульвар",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.729542,
-			"Longitude": 37.470973
+		"ID": 206,
+		"QuadKey": 27286306416539,
+		"Lat": 55.789282,
+		"Lon": 37.679895,
+		"Properties": {
+			"name": "Сокольники",
+			"qk4": "012031010112212132132123"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.789282,
+			"Longitude": 37.679895
 		}
 	},
 	{
-		"ID": 261,
-		"Name": "Кунцевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.730634,
-			"Longitude": 37.445123
+		"ID": 207,
+		"QuadKey": 27286307878799,
+		"Lat": 55.780014,
+		"Lon": 37.666097,
+		"Properties": {
+			"name": "Красносельская",
+			"qk4": "012031010112230003132033"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.780014,
+			"Longitude": 37.666097
 		}
 	},
 	{
-		"ID": 262,
-		"Name": "Молодежная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.741375,
-			"Longitude": 37.415627
+		"ID": 208,
+		"QuadKey": 27286307288596,
+		"Lat": 55.774072,
+		"Lon": 37.654565,
+		"Properties": {
+			"name": "Комсомольская",
+			"qk4": "012031010112221303120110"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.774072,
+			"Longitude": 37.654565
 		}
 	},
 	{
-		"ID": 263,
-		"Name": "Крылатское",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.756842,
-			"Longitude": 37.408139
+		"ID": 209,
+		"QuadKey": 27286307625707,
+		"Lat": 55.768307,
+		"Lon": 37.6478,
+		"Properties": {
+			"name": "Красные ворота",
+			"qk4": "012031010112223011223223"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.768307,
+			"Longitude": 37.6478
 		}
 	},
 	{
-		"ID": 264,
-		"Name": "Строгино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.803831,
-			"Longitude": 37.402405
+		"ID": 211,
+		"QuadKey": 27286307522521,
+		"Lat": 55.759889,
+		"Lon": 37.625336,
+		"Properties": {
+			"name": "Лубянка",
+			"qk4": "012031010112222230133121"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.759889,
+			"Longitude": 37.625336
 		}
 	},
 	{
-		"ID": 265,
-		"Name": "Мякинино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.823342,
-			"Longitude": 37.385214
+		"ID": 212,
+		"QuadKey": 27286352253140,
+		"Lat": 55.757228,
+		"Lon": 37.615078,
+		"Properties": {
+			"name": "Охотный ряд",
+			"qk4": "012031010121111111003110"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.757228,
+			"Longitude": 37.615078
 		}
 	},
 	{
-		"ID": 266,
-		"Name": "Волоколамская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.835154,
-			"Longitude": 37.382453
+		"ID": 213,
+		"QuadKey": 27286352279179,
+		"Lat": 55.752123,
+		"Lon": 37.610388,
+		"Properties": {
+			"name": "Библиотека им.Ленина",
+			"qk4": "012031010121111123122023"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.752123,
+			"Longitude": 37.610388
 		}
 	},
 	{
-		"ID": 267,
-		"Name": "Митино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.846098,
-			"Longitude": 37.36122
+		"ID": 214,
+		"QuadKey": 27286352362275,
+		"Lat": 55.745297,
+		"Lon": 37.604217,
+		"Properties": {
+			"name": "Кропоткинская",
+			"qk4": "012031010121111233230203"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.745297,
+			"Longitude": 37.604217
 		}
 	},
 	{
-		"ID": 268,
-		"Name": "Пятницкое шоссе",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.853634,
-			"Longitude": 37.353108
+		"ID": 215,
+		"QuadKey": 27286352657903,
+		"Lat": 55.736163,
+		"Lon": 37.595027,
+		"Properties": {
+			"name": "Парк культуры",
+			"qk4": "012031010121112313313233"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.736163,
+			"Longitude": 37.595027
 		}
 	},
 	{
-		"ID": 269,
-		"Name": "Кунцевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.730815,
-			"Longitude": 37.446754
+		"ID": 217,
+		"QuadKey": 27286353403246,
+		"Lat": 55.722388,
+		"Lon": 37.562041,
+		"Properties": {
+			"name": "Спортивная",
+			"qk4": "012031010121121231311232"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.722388,
+			"Longitude": 37.562041
 		}
 	},
 	{
-		"ID": 270,
-		"Name": "Пионерская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.736027,
-			"Longitude": 37.466728
-		}
-	},
-	{
-		"ID": 271,
-		"Name": "Филевский парк",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.739665,
-			"Longitude": 37.483902
-		}
-	},
-	{
-		"ID": 272,
-		"Name": "Багратионовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.743544,
-			"Longitude": 37.497042
-		}
-	},
-	{
-		"ID": 273,
-		"Name": "Фили",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.746763,
-			"Longitude": 37.514035
-		}
-	},
-	{
-		"ID": 274,
-		"Name": "Кутузовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.740544,
-			"Longitude": 37.5341
-		}
-	},
-	{
-		"ID": 275,
-		"Name": "Студенческая",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.738761,
-			"Longitude": 37.54842
-		}
-	},
-	{
-		"ID": 276,
-		"Name": "Киевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.743168,
-			"Longitude": 37.565425
-		}
-	},
-	{
-		"ID": 277,
-		"Name": "Смоленская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.749083,
-			"Longitude": 37.582173
-		}
-	},
-	{
-		"ID": 278,
-		"Name": "Арбатская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.752122,
-			"Longitude": 37.601553
-		}
-	},
-	{
-		"ID": 279,
-		"Name": "Александровский сад",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.752255,
-			"Longitude": 37.608775
+		"ID": 218,
+		"QuadKey": 27286353928402,
+		"Lat": 55.709169,
+		"Lon": 37.557293,
+		"Properties": {
+			"name": "Воробьевы горы",
+			"qk4": "012031010121123232003102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.709169,
+			"Longitude": 37.557293
 		}
 	},
 	{
 		"ID": 280,
-		"Name": "Выставочная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286351056278,
+		"Lat": 55.750243,
+		"Lon": 37.542641,
+		"Properties": {
+			"name": "Выставочная",
+			"qk4": "012031010121100300312112"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.750243,
 			"Longitude": 37.542641
 		}
 	},
 	{
 		"ID": 281,
-		"Name": "Международная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286351002576,
+		"Lat": 55.748324,
+		"Lon": 37.533282,
+		"Properties": {
+			"name": "Международная",
+			"qk4": "012031010121100203233100"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.748324,
 			"Longitude": 37.533282
 		}
 	},
 	{
 		"ID": 282,
-		"Name": "Новослободская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286262016218,
+		"Lat": 55.779606,
+		"Lon": 37.601252,
+		"Properties": {
+			"name": "Новослободская",
+			"qk4": "012031010103331012203122"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.779606,
 			"Longitude": 37.601252
 		}
 	},
 	{
 		"ID": 283,
-		"Name": "Проспект Мира",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286306897397,
+		"Lat": 55.779584,
+		"Lon": 37.633646,
+		"Properties": {
+			"name": "Проспект Мира",
+			"qk4": "012031010112220103313311"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.779584,
 			"Longitude": 37.633646
 		}
 	},
 	{
-		"ID": 284,
-		"Name": "Комсомольская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.775672,
-			"Longitude": 37.654772
-		}
-	},
-	{
 		"ID": 285,
-		"Name": "Курская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286307862012,
+		"Lat": 55.758631,
+		"Lon": 37.661059,
+		"Properties": {
+			"name": "Курская",
+			"qk4": "012031010112223333113330"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.758631,
 			"Longitude": 37.661059
 		}
 	},
 	{
 		"ID": 286,
-		"Name": "Таганская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397860070,
+		"Lat": 55.742396,
+		"Lon": 37.653334,
+		"Properties": {
+			"name": "Таганская",
+			"qk4": "012031010130003103203212"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.742396,
 			"Longitude": 37.653334
 		}
 	},
 	{
 		"ID": 287,
-		"Name": "Павелецкая",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286399176539,
+		"Lat": 55.731414,
+		"Lon": 37.636294,
+		"Properties": {
+			"name": "Павелецкая",
+			"qk4": "012031010130020110331123"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.731414,
 			"Longitude": 37.636294
 		}
 	},
 	{
 		"ID": 288,
-		"Name": "Добрынинская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286399129466,
+		"Lat": 55.728994,
+		"Lon": 37.622533,
+		"Properties": {
+			"name": "Добрынинская",
+			"qk4": "012031010130020021131322"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.728994,
 			"Longitude": 37.622533
 		}
 	},
 	{
 		"ID": 289,
-		"Name": "Октябрьская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286354367904,
+		"Lat": 55.729264,
+		"Lon": 37.611049,
+		"Properties": {
+			"name": "Октябрьская",
+			"qk4": "012031010121131121112200"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.729264,
 			"Longitude": 37.611049
 		}
 	},
 	{
-		"ID": 290,
-		"Name": "Парк культуры",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.735221,
-			"Longitude": 37.593095
-		}
-	},
-	{
 		"ID": 291,
-		"Name": "Киевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286351716254,
+		"Lat": 55.74361,
+		"Lon": 37.56735,
+		"Properties": {
+			"name": "Киевская",
+			"qk4": "012031010121103101332132"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.74361,
 			"Longitude": 37.56735
 		}
 	},
 	{
 		"ID": 292,
-		"Name": "Краснопресненская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286262419820,
+		"Lat": 55.760378,
+		"Lon": 37.577114,
+		"Properties": {
+			"name": "Краснопресненская",
+			"qk4": "012031010103332221011230"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.760378,
 			"Longitude": 37.577114
 		}
 	},
 	{
 		"ID": 293,
-		"Name": "Белорусская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286261881101,
+		"Lat": 55.775179,
+		"Lon": 37.582303,
+		"Properties": {
+			"name": "Белорусская",
+			"qk4": "012031010103330211210031"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.775179,
 			"Longitude": 37.582303
 		}
 	},
 	{
 		"ID": 294,
-		"Name": "Медведково",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286272778990,
+		"Lat": 55.888103,
+		"Lon": 37.661562,
+		"Properties": {
+			"name": "Медведково",
+			"qk4": "012031010110212022023232"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.888103,
 			"Longitude": 37.661562
 		}
 	},
 	{
 		"ID": 295,
-		"Name": "Бабушкинская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286274480718,
+		"Lat": 55.870641,
+		"Lon": 37.664341,
+		"Properties": {
+			"name": "Бабушкинская",
+			"qk4": "012031010110230221221032"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.870641,
 			"Longitude": 37.664341
 		}
 	},
 	{
-		"ID": 296,
-		"Name": "Свиблово",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.855558,
-			"Longitude": 37.653379
-		}
-	},
-	{
-		"ID": 297,
-		"Name": "Ботанический сад",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.844597,
-			"Longitude": 37.637811
-		}
-	},
-	{
 		"ID": 298,
-		"Name": "ВДНХ",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286298865201,
+		"Lat": 55.819626,
+		"Lon": 37.640751,
+		"Properties": {
+			"name": "ВДНХ",
+			"qk4": "012031010112021222320301"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.819626,
 			"Longitude": 37.640751
 		}
 	},
 	{
 		"ID": 299,
-		"Name": "Алексеевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286299211705,
+		"Lat": 55.807794,
+		"Lon": 37.638699,
+		"Properties": {
+			"name": "Алексеевская",
+			"qk4": "012031010112022333132321"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.807794,
 			"Longitude": 37.638699
 		}
 	},
 	{
 		"ID": 300,
-		"Name": "Рижская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286305335147,
+		"Lat": 55.792494,
+		"Lon": 37.636114,
+		"Properties": {
+			"name": "Рижская",
+			"qk4": "012031010112202112131223"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.792494,
 			"Longitude": 37.636114
 		}
 	},
 	{
 		"ID": 301,
-		"Name": "Проспект Мира",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286306887441,
+		"Lat": 55.781827,
+		"Lon": 37.633199,
+		"Properties": {
+			"name": "Проспект Мира",
+			"qk4": "012031010112220101130101"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.781827,
 			"Longitude": 37.633199
 		}
 	},
 	{
-		"ID": 302,
-		"Name": "Сухаревская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.772315,
-			"Longitude": 37.63285
-		}
-	},
-	{
 		"ID": 303,
-		"Name": "Тургеневская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286307461781,
+		"Lat": 55.765371,
+		"Lon": 37.636732,
+		"Properties": {
+			"name": "Тургеневская",
+			"qk4": "012031010112222131222111"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.765371,
 			"Longitude": 37.636732
 		}
 	},
 	{
 		"ID": 304,
-		"Name": "Китай-город",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397065323,
+		"Lat": 55.756498,
+		"Lon": 37.631326,
+		"Properties": {
+			"name": "Китай-город",
+			"qk4": "012031010130000101201223"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.756498,
 			"Longitude": 37.631326
 		}
 	},
 	{
 		"ID": 305,
-		"Name": "Третьяковская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397573656,
+		"Lat": 55.74073,
+		"Lon": 37.625624,
+		"Properties": {
+			"name": "Третьяковская",
+			"qk4": "012031010130002031220120"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.74073,
 			"Longitude": 37.625624
 		}
 	},
 	{
-		"ID": 306,
-		"Name": "Октябрьская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.731232,
-			"Longitude": 37.612851
+		"ID": 249,
+		"QuadKey": 27286310900469,
+		"Lat": 55.787713,
+		"Lon": 37.779896,
+		"Properties": {
+			"name": "Измайловская",
+			"qk4": "012031010112313211023311"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.787713,
+			"Longitude": 37.779896
 		}
 	},
 	{
-		"ID": 307,
-		"Name": "Шаболовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.718828,
-			"Longitude": 37.607892
+		"ID": 250,
+		"QuadKey": 27286309918021,
+		"Lat": 55.788401,
+		"Lon": 37.74882,
+		"Properties": {
+			"name": "Партизанская",
+			"qk4": "012031010112303311111011"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.788401,
+			"Longitude": 37.74882
 		}
 	},
 	{
-		"ID": 308,
-		"Name": "Ленинский проспект",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.70678,
-			"Longitude": 37.58499
+		"ID": 252,
+		"QuadKey": 27286311010361,
+		"Lat": 55.782057,
+		"Lon": 37.7053,
+		"Properties": {
+			"name": "Электрозаводская",
+			"qk4": "012031010112320000000321"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.782057,
+			"Longitude": 37.7053
 		}
 	},
 	{
-		"ID": 309,
-		"Name": "Академическая",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.687147,
-			"Longitude": 37.5723
+		"ID": 253,
+		"QuadKey": 27286308111907,
+		"Lat": 55.772405,
+		"Lon": 37.67904,
+		"Properties": {
+			"name": "Бауманская",
+			"qk4": "012031010112230330120203"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.772405,
+			"Longitude": 37.67904
 		}
 	},
 	{
-		"ID": 310,
-		"Name": "Профсоюзная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.677671,
-			"Longitude": 37.562595
+		"ID": 254,
+		"QuadKey": 27286396999650,
+		"Lat": 55.756741,
+		"Lon": 37.62236,
+		"Properties": {
+			"name": "Площадь Революции",
+			"qk4": "012031010130000001133202"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.756741,
+			"Longitude": 37.62236
 		}
 	},
 	{
-		"ID": 311,
-		"Name": "Новые Черемушки",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.670077,
-			"Longitude": 37.554493
+		"ID": 255,
+		"QuadKey": 27286307861079,
+		"Lat": 55.758564,
+		"Lon": 37.659039,
+		"Properties": {
+			"name": "Курская",
+			"qk4": "012031010112223333021113"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.758564,
+			"Longitude": 37.659039
 		}
 	},
 	{
-		"ID": 312,
-		"Name": "Калужская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.656682,
-			"Longitude": 37.540075
+		"ID": 257,
+		"QuadKey": 27286352090908,
+		"Lat": 55.747713,
+		"Lon": 37.583802,
+		"Properties": {
+			"name": "Смоленская",
+			"qk4": "012031010121110231130130"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.747713,
+			"Longitude": 37.583802
 		}
 	},
 	{
-		"ID": 313,
-		"Name": "Беляево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.642357,
-			"Longitude": 37.526115
+		"ID": 258,
+		"QuadKey": 27286351717615,
+		"Lat": 55.743117,
+		"Lon": 37.564132,
+		"Properties": {
+			"name": "Киевская",
+			"qk4": "012031010121103102103233"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.743117,
+			"Longitude": 37.564132
 		}
 	},
 	{
-		"ID": 314,
-		"Name": "Коньково",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.631857,
-			"Longitude": 37.519156
+		"ID": 259,
+		"QuadKey": 27286348681566,
+		"Lat": 55.735679,
+		"Lon": 37.516865,
+		"Properties": {
+			"name": "Парк Победы",
+			"qk4": "012031010121013231011132"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.735679,
+			"Longitude": 37.516865
 		}
 	},
 	{
-		"ID": 315,
-		"Name": "Теплый Стан",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.61873,
-			"Longitude": 37.505912
+		"ID": 263,
+		"QuadKey": 27286335150016,
+		"Lat": 55.756842,
+		"Lon": 37.408139,
+		"Properties": {
+			"name": "Крылатское",
+			"qk4": "012031010120110011133000"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.756842,
+			"Longitude": 37.408139
 		}
 	},
 	{
-		"ID": 316,
-		"Name": "Ясенево",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.606182,
-			"Longitude": 37.5334
+		"ID": 264,
+		"QuadKey": 27286242891021,
+		"Lat": 55.803831,
+		"Lon": 37.402405,
+		"Properties": {
+			"name": "Строгино",
+			"qk4": "012031010102310021110031"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.803831,
+			"Longitude": 37.402405
 		}
 	},
 	{
-		"ID": 317,
-		"Name": "Новоясеневская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.601947,
-			"Longitude": 37.553017
+		"ID": 266,
+		"QuadKey": 27286234361350,
+		"Lat": 55.835154,
+		"Lon": 37.382453,
+		"Properties": {
+			"name": "Волоколамская",
+			"qk4": "012031010102103212320012"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.835154,
+			"Longitude": 37.382453
 		}
 	},
 	{
-		"ID": 318,
-		"Name": "Планерная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.859676,
-			"Longitude": 37.436808
+		"ID": 267,
+		"QuadKey": 27286233599397,
+		"Lat": 55.846098,
+		"Lon": 37.36122,
+		"Properties": {
+			"name": "Митино",
+			"qk4": "012031010102100230312211"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.846098,
+			"Longitude": 37.36122
 		}
 	},
 	{
-		"ID": 319,
-		"Name": "Сходненская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.84926,
-			"Longitude": 37.44076
+		"ID": 269,
+		"QuadKey": 27286348772848,
+		"Lat": 55.730815,
+		"Lon": 37.446754,
+		"Properties": {
+			"name": "Кунцевская",
+			"qk4": "012031010121020003113300"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.730815,
+			"Longitude": 37.446754
 		}
 	},
 	{
-		"ID": 320,
-		"Name": "Тушинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.825479,
-			"Longitude": 37.437024
+		"ID": 270,
+		"QuadKey": 27286347594356,
+		"Lat": 55.736027,
+		"Lon": 37.466728,
+		"Properties": {
+			"name": "Пионерская",
+			"qk4": "012031010121003203221310"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.736027,
+			"Longitude": 37.466728
 		}
 	},
 	{
-		"ID": 321,
-		"Name": "Спартак",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.8182,
-			"Longitude": 37.4352
+		"ID": 271,
+		"QuadKey": 27286347576316,
+		"Lat": 55.739665,
+		"Lon": 37.483902,
+		"Properties": {
+			"name": "Филевский парк",
+			"qk4": "012031010121003133033330"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.739665,
+			"Longitude": 37.483902
 		}
 	},
 	{
-		"ID": 322,
-		"Name": "Щукинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.8094,
-			"Longitude": 37.463241
+		"ID": 272,
+		"QuadKey": 27286348303272,
+		"Lat": 55.743544,
+		"Lon": 37.497042,
+		"Properties": {
+			"name": "Багратионовская",
+			"qk4": "012031010121012100232220"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.743544,
+			"Longitude": 37.497042
 		}
 	},
 	{
-		"ID": 323,
-		"Name": "Октябрьское поле",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.793581,
-			"Longitude": 37.493317
+		"ID": 273,
+		"QuadKey": 27286348155858,
+		"Lat": 55.746763,
+		"Lon": 37.514035,
+		"Properties": {
+			"name": "Фили",
+			"qk4": "012031010121011230233102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.746763,
+			"Longitude": 37.514035
 		}
 	},
 	{
-		"ID": 324,
-		"Name": "Полежаевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.777201,
-			"Longitude": 37.517895
+		"ID": 275,
+		"QuadKey": 27286351594843,
+		"Lat": 55.738761,
+		"Lon": 37.54842,
+		"Properties": {
+			"name": "Студенческая",
+			"qk4": "012031010121102310111123"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.738761,
+			"Longitude": 37.54842
 		}
 	},
 	{
-		"ID": 325,
-		"Name": "Беговая",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.773505,
-			"Longitude": 37.545518
+		"ID": 276,
+		"QuadKey": 27286351720675,
+		"Lat": 55.743168,
+		"Lon": 37.565425,
+		"Properties": {
+			"name": "Киевская",
+			"qk4": "012031010121103103003203"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.743168,
+			"Longitude": 37.565425
 		}
 	},
 	{
-		"ID": 326,
-		"Name": "Улица 1905 года",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.763944,
-			"Longitude": 37.562271
+		"ID": 277,
+		"QuadKey": 27286352065410,
+		"Lat": 55.749083,
+		"Lon": 37.582173,
+		"Properties": {
+			"name": "Смоленская",
+			"qk4": "012031010121110213032002"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.749083,
+			"Longitude": 37.582173
 		}
 	},
 	{
-		"ID": 327,
-		"Name": "Баррикадная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.760793,
-			"Longitude": 37.581242
+		"ID": 278,
+		"QuadKey": 27286352225167,
+		"Lat": 55.752122,
+		"Lon": 37.601553,
+		"Properties": {
+			"name": "Арбатская",
+			"qk4": "012031010121111032032033"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.752122,
+			"Longitude": 37.601553
 		}
 	},
 	{
-		"ID": 328,
-		"Name": "Пушкинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.765607,
-			"Longitude": 37.604356
-		}
-	},
-	{
-		"ID": 329,
-		"Name": "Кузнецкий мост",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.761498,
-			"Longitude": 37.624423
-		}
-	},
-	{
-		"ID": 330,
-		"Name": "Китай-город",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.75436,
-			"Longitude": 37.633877
-		}
-	},
-	{
-		"ID": 331,
-		"Name": "Таганская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.739502,
-			"Longitude": 37.653605
-		}
-	},
-	{
-		"ID": 332,
-		"Name": "Пролетарская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.731546,
-			"Longitude": 37.666917
-		}
-	},
-	{
-		"ID": 333,
-		"Name": "Волгоградский проспект",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.725546,
-			"Longitude": 37.685197
-		}
-	},
-	{
-		"ID": 334,
-		"Name": "Текстильщики",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.709211,
-			"Longitude": 37.732117
-		}
-	},
-	{
-		"ID": 335,
-		"Name": "Кузьминки",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.705493,
-			"Longitude": 37.763295
-		}
-	},
-	{
-		"ID": 336,
-		"Name": "Рязанский проспект",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.716139,
-			"Longitude": 37.792694
-		}
-	},
-	{
-		"ID": 337,
-		"Name": "Выхино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.715983,
-			"Longitude": 37.816788
-		}
-	},
-	{
-		"ID": 338,
-		"Name": "Лермонтовский проспект",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.702036,
-			"Longitude": 37.851044
+		"ID": 261,
+		"QuadKey": 27286348772126,
+		"Lat": 55.730634,
+		"Lon": 37.445123,
+		"Properties": {
+			"name": "Кунцевская",
+			"qk4": "012031010121020003030132"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.730634,
+			"Longitude": 37.445123
 		}
 	},
 	{
 		"ID": 339,
-		"Name": "Жулебино",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286423982024,
+		"Lat": 55.684722,
+		"Lon": 37.855833,
+		"Properties": {
+			"name": "Жулебино",
+			"qk4": "012031010131212330333020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.684722,
 			"Longitude": 37.855833
 		}
 	},
 	{
 		"ID": 340,
-		"Name": "Котельники",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286425533653,
+		"Lat": 55.6743,
+		"Lon": 37.8582,
+		"Properties": {
+			"name": "Котельники",
+			"qk4": "012031010131230313303111"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.6743,
 			"Longitude": 37.8582
 		}
 	},
 	{
 		"ID": 341,
-		"Name": "Новокосино",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286415261666,
+		"Lat": 55.745113,
+		"Lon": 37.864052,
+		"Properties": {
+			"name": "Новокосино",
+			"qk4": "012031010131011223333202"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.745113,
 			"Longitude": 37.864052
 		}
 	},
 	{
 		"ID": 342,
-		"Name": "Новогиреево",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286413899583,
+		"Lat": 55.752237,
+		"Lon": 37.814587,
+		"Properties": {
+			"name": "Новогиреево",
+			"qk4": "012031010131000133130333"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.752237,
 			"Longitude": 37.814587
 		}
 	},
 	{
 		"ID": 343,
-		"Name": "Перово",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286402696602,
+		"Lat": 55.75098,
+		"Lon": 37.78422,
+		"Properties": {
+			"name": "Перово",
+			"qk4": "012031010130111300112122"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.75098,
 			"Longitude": 37.78422
 		}
 	},
 	{
-		"ID": 344,
-		"Name": "Шоссе энтузиастов",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.75809,
-			"Longitude": 37.751703
-		}
-	},
-	{
 		"ID": 345,
-		"Name": "Авиамоторная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286401297418,
+		"Lat": 55.751933,
+		"Lon": 37.717444,
+		"Properties": {
+			"name": "Авиамоторная",
+			"qk4": "012031010130100122300022"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.751933,
 			"Longitude": 37.717444
 		}
 	},
 	{
 		"ID": 346,
-		"Name": "Площадь Ильича",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286398294216,
+		"Lat": 55.747115,
+		"Lon": 37.680726,
+		"Properties": {
+			"name": "Площадь Ильича",
+			"qk4": "012031010130010331203020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.747115,
 			"Longitude": 37.680726
 		}
 	},
 	{
 		"ID": 347,
-		"Name": "Марксистская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397897283,
+		"Lat": 55.740746,
+		"Lon": 37.65604,
+		"Properties": {
+			"name": "Марксистская",
+			"qk4": "012031010130003130221003"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.740746,
 			"Longitude": 37.65604
 		}
 	},
 	{
 		"ID": 348,
-		"Name": "Третьяковская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397573384,
+		"Lat": 55.741125,
+		"Lon": 37.626142,
+		"Properties": {
+			"name": "Третьяковская",
+			"qk4": "012031010130002031210020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.741125,
 			"Longitude": 37.626142
 		}
 	},
 	{
-		"ID": 349,
-		"Name": "Деловой центр",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.7491,
-			"Longitude": 37.5395
-		}
-	},
-	{
-		"ID": 350,
-		"Name": "Парк Победы",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.736478,
-			"Longitude": 37.514401
-		}
-	},
-	{
 		"ID": 351,
-		"Name": "Алтуфьево",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286226274200,
+		"Lat": 55.899034,
+		"Lon": 37.586473,
+		"Properties": {
+			"name": "Алтуфьево",
+			"qk4": "012031010101310300132120"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.899034,
 			"Longitude": 37.586473
 		}
 	},
 	{
 		"ID": 352,
-		"Name": "Бибирево",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286227043771,
+		"Lat": 55.883868,
+		"Lon": 37.603011,
+		"Properties": {
+			"name": "Бибирево",
+			"qk4": "012031010101313230112323"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.883868,
 			"Longitude": 37.603011
 		}
 	},
 	{
 		"ID": 353,
-		"Name": "Отрадное",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286229016219,
+		"Lat": 55.864273,
+		"Lon": 37.605066,
+		"Properties": {
+			"name": "Отрадное",
+			"qk4": "012031010101333031322123"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.864273,
 			"Longitude": 37.605066
 		}
 	},
 	{
 		"ID": 354,
-		"Name": "Владыкино",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286251463434,
+		"Lat": 55.848236,
+		"Lon": 37.590451,
+		"Properties": {
+			"name": "Владыкино",
+			"qk4": "012031010103110312030022"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.848236,
 			"Longitude": 37.590451
 		}
 	},
 	{
-		"ID": 355,
-		"Name": "Петровско-Разумовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.836565,
-			"Longitude": 37.575512
-		}
-	},
-	{
 		"ID": 356,
-		"Name": "Тимирязевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286253863921,
+		"Lat": 55.81866,
+		"Lon": 37.574498,
+		"Properties": {
+			"name": "Тимирязевская",
+			"qk4": "012031010103132000033301"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.81866,
 			"Longitude": 37.574498
 		}
 	},
 	{
 		"ID": 357,
-		"Name": "Дмитровская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286254055963,
+		"Lat": 55.808056,
+		"Lon": 37.581734,
+		"Properties": {
+			"name": "Дмитровская",
+			"qk4": "012031010103132233020123"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.808056,
 			"Longitude": 37.581734
 		}
 	},
 	{
 		"ID": 358,
-		"Name": "Савеловская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286260224568,
+		"Lat": 55.794054,
+		"Lon": 37.587163,
+		"Properties": {
+			"name": "Савеловская",
+			"qk4": "012031010103312101020320"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.794054,
 			"Longitude": 37.587163
 		}
 	},
 	{
 		"ID": 359,
-		"Name": "Менделеевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286261993927,
+		"Lat": 55.781999,
+		"Lon": 37.599141,
+		"Properties": {
+			"name": "Менделеевская",
+			"qk4": "012031010103331001013013"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.781999,
 			"Longitude": 37.599141
 		}
 	},
 	{
 		"ID": 360,
-		"Name": "Цветной бульвар",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286306986608,
+		"Lat": 55.771653,
+		"Lon": 37.620466,
+		"Properties": {
+			"name": "Цветной бульвар",
+			"qk4": "012031010112220221221300"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.771653,
 			"Longitude": 37.620466
 		}
 	},
 	{
 		"ID": 361,
-		"Name": "Чеховская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286262615441,
+		"Lat": 55.765747,
+		"Lon": 37.608493,
+		"Properties": {
+			"name": "Чеховская",
+			"qk4": "012031010103333120312101"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.765747,
 			"Longitude": 37.608493
 		}
 	},
 	{
-		"ID": 362,
-		"Name": "Боровицкая",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.750399,
-			"Longitude": 37.60934
-		}
-	},
-	{
 		"ID": 363,
-		"Name": "Полянка",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286397658658,
+		"Lat": 55.736795,
+		"Lon": 37.618594,
+		"Properties": {
+			"name": "Полянка",
+			"qk4": "012031010130002202120202"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.736795,
 			"Longitude": 37.618594
 		}
 	},
 	{
 		"ID": 364,
-		"Name": "Серпуховская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286399152033,
+		"Lat": 55.726548,
+		"Lon": 37.624792,
+		"Properties": {
+			"name": "Серпуховская",
+			"qk4": "012031010130020032332201"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.726548,
 			"Longitude": 37.624792
 		}
 	},
 	{
-		"ID": 365,
-		"Name": "Тульская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.70961,
-			"Longitude": 37.622569
+		"ID": 248,
+		"QuadKey": 27286322037139,
+		"Lat": 55.794376,
+		"Lon": 37.799364,
+		"Properties": {
+			"name": "Первомайская",
+			"qk4": "012031010113202010012103"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.794376,
+			"Longitude": 37.799364
 		}
 	},
 	{
-		"ID": 366,
-		"Name": "Нагатинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.682099,
-			"Longitude": 37.620917
+		"ID": 308,
+		"QuadKey": 27286360361377,
+		"Lat": 55.70678,
+		"Lon": 37.58499,
+		"Properties": {
+			"name": "Ленинский проспект",
+			"qk4": "012031010121310100212201"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.70678,
+			"Longitude": 37.58499
 		}
 	},
 	{
-		"ID": 367,
-		"Name": "Нагорная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.672962,
-			"Longitude": 37.610397
+		"ID": 310,
+		"QuadKey": 27286361711287,
+		"Lat": 55.677671,
+		"Lon": 37.562595,
+		"Properties": {
+			"name": "Профсоюзная",
+			"qk4": "012031010121321122022313"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.677671,
+			"Longitude": 37.562595
 		}
 	},
 	{
-		"ID": 368,
-		"Name": "Нахимовский проспект",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.662379,
-			"Longitude": 37.605274
+		"ID": 312,
+		"QuadKey": 27286384435181,
+		"Lat": 55.656682,
+		"Lon": 37.540075,
+		"Properties": {
+			"name": "Калужская",
+			"qk4": "012031010123100011333231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.656682,
+			"Longitude": 37.540075
 		}
 	},
 	{
-		"ID": 369,
-		"Name": "Севастопольская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.651451,
-			"Longitude": 37.59809
+		"ID": 313,
+		"QuadKey": 27286382167473,
+		"Lat": 55.642357,
+		"Lon": 37.526115,
+		"Properties": {
+			"name": "Беляево",
+			"qk4": "012031010123013130112301"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.642357,
+			"Longitude": 37.526115
 		}
 	},
 	{
-		"ID": 370,
-		"Name": "Чертановская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.640538,
-			"Longitude": 37.606065
+		"ID": 314,
+		"QuadKey": 27286383692711,
+		"Lat": 55.631857,
+		"Lon": 37.519156,
+		"Properties": {
+			"name": "Коньково",
+			"qk4": "012031010123031100232213"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.631857,
+			"Longitude": 37.519156
 		}
 	},
 	{
-		"ID": 371,
-		"Name": "Южная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.622436,
-			"Longitude": 37.609047
+		"ID": 315,
+		"QuadKey": 27286383981527,
+		"Lat": 55.61873,
+		"Lon": 37.505912,
+		"Properties": {
+			"name": "Теплый Стан",
+			"qk4": "012031010123032113033113"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.61873,
+			"Longitude": 37.505912
 		}
 	},
 	{
-		"ID": 372,
-		"Name": "Пражская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.610962,
-			"Longitude": 37.602386
+		"ID": 317,
+		"QuadKey": 27286393193696,
+		"Lat": 55.601947,
+		"Lon": 37.553017,
+		"Properties": {
+			"name": "Новоясеневская",
+			"qk4": "012031010123301200103200"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.601947,
+			"Longitude": 37.553017
 		}
 	},
 	{
-		"ID": 373,
-		"Name": "Улица Академика Янгеля",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.596753,
-			"Longitude": 37.601498
+		"ID": 318,
+		"QuadKey": 27286212406162,
+		"Lat": 55.859676,
+		"Lon": 37.436808,
+		"Properties": {
+			"name": "Планерная",
+			"qk4": "012031010100333312232102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.859676,
+			"Longitude": 37.436808
 		}
 	},
 	{
-		"ID": 374,
-		"Name": "Аннино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.583477,
-			"Longitude": 37.596999
+		"ID": 319,
+		"QuadKey": 27286234946946,
+		"Lat": 55.84926,
+		"Lon": 37.44076,
+		"Properties": {
+			"name": "Сходненская",
+			"qk4": "012031010102111311312002"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.84926,
+			"Longitude": 37.44076
 		}
 	},
 	{
-		"ID": 375,
-		"Name": "Бульвар Дмитрия Донского",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.568201,
-			"Longitude": 37.576856
+		"ID": 320,
+		"QuadKey": 27286237036873,
+		"Lat": 55.825479,
+		"Lon": 37.437024,
+		"Properties": {
+			"name": "Тушинская",
+			"qk4": "012031010102131310011021"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.825479,
+			"Longitude": 37.437024
 		}
 	},
 	{
-		"ID": 376,
-		"Name": "Петровско-Разумовская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.836667,
-			"Longitude": 37.575556
+		"ID": 321,
+		"QuadKey": 27286237420799,
+		"Lat": 55.8182,
+		"Lon": 37.4352,
+		"Properties": {
+			"name": "Спартак",
+			"qk4": "012031010102133101303333"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.8182,
+			"Longitude": 37.4352
 		}
 	},
 	{
-		"ID": 377,
-		"Name": "Фонвизинская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.822778,
-			"Longitude": 37.588056
+		"ID": 323,
+		"QuadKey": 27286255979977,
+		"Lat": 55.793581,
+		"Lon": 37.493317,
+		"Properties": {
+			"name": "Октябрьское поле",
+			"qk4": "012031010103212010313021"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.793581,
+			"Longitude": 37.493317
 		}
 	},
 	{
-		"ID": 378,
-		"Name": "Бутырская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.813333,
-			"Longitude": 37.602778
+		"ID": 324,
+		"QuadKey": 27286257857982,
+		"Lat": 55.777201,
+		"Lon": 37.517895,
+		"Properties": {
+			"name": "Полежаевская",
+			"qk4": "012031010103231033112332"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.777201,
+			"Longitude": 37.517895
 		}
 	},
 	{
-		"ID": 379,
-		"Name": "Марьина Роща",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.793723,
-			"Longitude": 37.61618
+		"ID": 325,
+		"QuadKey": 27286260891073,
+		"Lat": 55.773505,
+		"Lon": 37.545518,
+		"Properties": {
+			"name": "Беговая",
+			"qk4": "012031010103320303313001"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.773505,
+			"Longitude": 37.545518
 		}
 	},
 	{
-		"ID": 380,
-		"Name": "Достоевская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.781667,
-			"Longitude": 37.613889
+		"ID": 326,
+		"QuadKey": 27286261574154,
+		"Lat": 55.763944,
+		"Lon": 37.562271,
+		"Properties": {
+			"name": "Улица 1905 года",
+			"qk4": "012031010103323122220022"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.763944,
+			"Longitude": 37.562271
 		}
 	},
 	{
-		"ID": 381,
-		"Name": "Трубная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.76771,
-			"Longitude": 37.621926
+		"ID": 328,
+		"QuadKey": 27286262569401,
+		"Lat": 55.765607,
+		"Lon": 37.604356,
+		"Properties": {
+			"name": "Пушкинская",
+			"qk4": "012031010103333031212321"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.765607,
+			"Longitude": 37.604356
 		}
 	},
 	{
-		"ID": 382,
-		"Name": "Сретенский бульвар",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.766106,
-			"Longitude": 37.635688
+		"ID": 329,
+		"QuadKey": 27286307497664,
+		"Lat": 55.761498,
+		"Lon": 37.624423,
+		"Properties": {
+			"name": "Кузнецкий мост",
+			"qk4": "012031010112222212123000"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.761498,
+			"Longitude": 37.624423
 		}
 	},
 	{
-		"ID": 383,
-		"Name": "Чкаловская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.755951,
-			"Longitude": 37.659293
+		"ID": 330,
+		"QuadKey": 27286397086394,
+		"Lat": 55.75436,
+		"Lon": 37.633877,
+		"Properties": {
+			"name": "Китай-город",
+			"qk4": "012031010130000112222322"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.75436,
+			"Longitude": 37.633877
 		}
 	},
 	{
-		"ID": 384,
-		"Name": "Римская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.747027,
-			"Longitude": 37.679996
+		"ID": 331,
+		"QuadKey": 27286397892898,
+		"Lat": 55.739502,
+		"Lon": 37.653605,
+		"Properties": {
+			"name": "Таганская",
+			"qk4": "012031010130003123210202"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.739502,
+			"Longitude": 37.653605
 		}
 	},
 	{
-		"ID": 385,
-		"Name": "Крестьянская застава",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.732278,
-			"Longitude": 37.665325
+		"ID": 333,
+		"QuadKey": 27286400535842,
+		"Lat": 55.725546,
+		"Lon": 37.685197,
+		"Properties": {
+			"name": "Волгоградский проспект",
+			"qk4": "012031010130031200310202"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.725546,
+			"Longitude": 37.685197
 		}
 	},
 	{
-		"ID": 386,
-		"Name": "Дубровка",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.71807,
-			"Longitude": 37.676259
+		"ID": 334,
+		"QuadKey": 27286404248894,
+		"Lat": 55.709211,
+		"Lon": 37.732117,
+		"Properties": {
+			"name": "Текстильщики",
+			"qk4": "012031010130123223110332"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.709211,
+			"Longitude": 37.732117
 		}
 	},
 	{
-		"ID": 387,
-		"Name": "Кожуховская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.706156,
-			"Longitude": 37.68544
+		"ID": 335,
+		"QuadKey": 27286410704978,
+		"Lat": 55.705493,
+		"Lon": 37.763295,
+		"Properties": {
+			"name": "Кузьминки",
+			"qk4": "012031010130310103201102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.705493,
+			"Longitude": 37.763295
 		}
 	},
 	{
-		"ID": 388,
-		"Name": "Печатники",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.692921,
-			"Longitude": 37.728338
+		"ID": 336,
+		"QuadKey": 27286405242307,
+		"Lat": 55.716139,
+		"Lon": 37.792694,
+		"Properties": {
+			"name": "Рязанский проспект",
+			"qk4": "012031010130133131313003"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.716139,
+			"Longitude": 37.792694
 		}
 	},
 	{
-		"ID": 389,
-		"Name": "Волжская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.690446,
-			"Longitude": 37.754314
-		}
-	},
-	{
-		"ID": 390,
-		"Name": "Люблино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.676596,
-			"Longitude": 37.761639
-		}
-	},
-	{
-		"ID": 391,
-		"Name": "Братиславская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.658817,
-			"Longitude": 37.748415
-		}
-	},
-	{
-		"ID": 392,
-		"Name": "Марьино",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.649158,
-			"Longitude": 37.743844
-		}
-	},
-	{
-		"ID": 393,
-		"Name": "Борисово",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.6325,
-			"Longitude": 37.743333
-		}
-	},
-	{
-		"ID": 394,
-		"Name": "Шипиловская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.621667,
-			"Longitude": 37.743611
-		}
-	},
-	{
-		"ID": 395,
-		"Name": "Зябликово",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.611944,
-			"Longitude": 37.745278
-		}
-	},
-	{
-		"ID": 396,
-		"Name": "Каширская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.654327,
-			"Longitude": 37.647705
-		}
-	},
-	{
-		"ID": 397,
-		"Name": "Варшавская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.653294,
-			"Longitude": 37.619522
+		"ID": 337,
+		"QuadKey": 27286416690757,
+		"Lat": 55.715983,
+		"Lon": 37.816788,
+		"Properties": {
+			"name": "Выхино",
+			"qk4": "012031010131023020321011"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.715983,
+			"Longitude": 37.816788
 		}
 	},
 	{
 		"ID": 398,
-		"Name": "Каховская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286385763287,
+		"Lat": 55.652923,
+		"Lon": 37.596573,
+		"Properties": {
+			"name": "Каховская",
+			"qk4": "012031010123111022033113"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.652923,
 			"Longitude": 37.596573
 		}
 	},
 	{
-		"ID": 399,
-		"Name": "Бунинская аллея",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.537977,
-			"Longitude": 37.515899
-		}
-	},
-	{
 		"ID": 400,
-		"Name": "Улица Горчакова",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286754072584,
+		"Lat": 55.542281,
+		"Lon": 37.532063,
+		"Properties": {
+			"name": "Улица Горчакова",
+			"qk4": "012031010301102021200020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.542281,
 			"Longitude": 37.532063
 		}
 	},
 	{
 		"ID": 401,
-		"Name": "Бульвар Адмирала Ушакова",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286754102493,
+		"Lat": 55.545207,
+		"Lon": 37.542329,
+		"Properties": {
+			"name": "Бульвар Адмирала Ушакова",
+			"qk4": "012031010301102100303131"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.545207,
 			"Longitude": 37.542329
 		}
 	},
 	{
 		"ID": 402,
-		"Name": "Улица Скобелевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286753938955,
+		"Lat": 55.548103,
+		"Lon": 37.552721,
+		"Properties": {
+			"name": "Улица Скобелевская",
+			"qk4": "012031010301101220320023"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.548103,
 			"Longitude": 37.552721
 		}
 	},
 	{
-		"ID": 403,
-		"Name": "Улица Старокачаловская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.569194,
-			"Longitude": 37.576074
-		}
-	},
-	{
 		"ID": 404,
-		"Name": "Лесопарковая",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286395958510,
+		"Lat": 55.581656,
+		"Lon": 37.577816,
+		"Properties": {
+			"name": "Лесопарковая",
+			"qk4": "012031010123330003103232"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.581656,
 			"Longitude": 37.577816
 		}
 	},
 	{
 		"ID": 405,
-		"Name": "Битцевский Парк",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286393206493,
+		"Lat": 55.600066,
+		"Lon": 37.556058,
+		"Properties": {
+			"name": "Битцевский Парк",
+			"qk4": "012031010123301203123131"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.600066,
 			"Longitude": 37.556058
 		}
 	},
 	{
 		"ID": 406,
-		"Name": "Тимирязевская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286253879461,
+		"Lat": 55.819049,
+		"Lon": 37.578882,
+		"Properties": {
+			"name": "Тимирязевская",
+			"qk4": "012031010103132010002211"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.819049,
 			"Longitude": 37.578882
 		}
 	},
 	{
 		"ID": 407,
-		"Name": "Улица Милашенкова",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286253585966,
+		"Lat": 55.821876,
+		"Lon": 37.591206,
+		"Properties": {
+			"name": "Улица Милашенкова",
+			"qk4": "012031010103130330120232"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.821876,
 			"Longitude": 37.591206
 		}
 	},
 	{
 		"ID": 408,
-		"Name": "Телецентр",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286253834888,
+		"Lat": 55.821795,
+		"Lon": 37.608975,
+		"Properties": {
+			"name": "Телецентр",
+			"qk4": "012031010103131321022020"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.821795,
 			"Longitude": 37.608975
 		}
 	},
 	{
-		"ID": 409,
-		"Name": "Улица Академика Королёва",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.821821,
-			"Longitude": 37.627167
-		}
-	},
-	{
 		"ID": 410,
-		"Name": "Выставочный центр",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286298648458,
+		"Lat": 55.824086,
+		"Lon": 37.638494,
+		"Properties": {
+			"name": "Выставочный центр",
+			"qk4": "012031010112020311332022"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.824086,
 			"Longitude": 37.638494
 		}
 	},
 	{
 		"ID": 411,
-		"Name": "Улица Сергея Эйзенштейна",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286298716234,
+		"Lat": 55.829305,
+		"Lon": 37.644997,
+		"Properties": {
+			"name": "Улица Сергея Эйзенштейна",
+			"qk4": "012031010112021012201022"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.829305,
 			"Longitude": 37.644997
 		}
 	},
 	{
 		"ID": 412,
-		"Name": "Окружная",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286250674900,
+		"Lat": 55.848889,
+		"Lon": 37.571111,
+		"Properties": {
+			"name": "Окружная",
+			"qk4": "012031010103101311223110"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.848889,
 			"Longitude": 37.571111
 		}
 	},
 	{
 		"ID": 413,
-		"Name": "Владыкино",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286251466663,
+		"Lat": 55.847222,
+		"Lon": 37.591944,
+		"Properties": {
+			"name": "Владыкино",
+			"qk4": "012031010103110312332213"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.847222,
 			"Longitude": 37.591944
 		}
 	},
 	{
 		"ID": 414,
-		"Name": "Ботанический сад",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286296764748,
+		"Lat": 55.845556,
+		"Lon": 37.640278,
+		"Properties": {
+			"name": "Ботанический сад",
+			"qk4": "012031010112001222011030"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.845556,
 			"Longitude": 37.640278
 		}
 	},
 	{
 		"ID": 415,
-		"Name": "Ростокино",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286297955310,
+		"Lat": 55.839444,
+		"Lon": 37.667778,
+		"Properties": {
+			"name": "Ростокино",
+			"qk4": "012031010112012030233232"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.839444,
 			"Longitude": 37.667778
 		}
 	},
 	{
-		"ID": 416,
-		"Name": "Белокаменная",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.83,
-			"Longitude": 37.700556
-		}
-	},
-	{
 		"ID": 417,
-		"Name": "Бульвар Рокоссовского",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286303438398,
+		"Lat": 55.817222,
+		"Lon": 37.736944,
+		"Properties": {
+			"name": "Бульвар Рокоссовского",
+			"qk4": "012031010112123013120332"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.817222,
 			"Longitude": 37.736944
 		}
 	},
 	{
 		"ID": 418,
-		"Name": "Локомотив",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286309291919,
+		"Lat": 55.803219,
+		"Lon": 37.745742,
+		"Properties": {
+			"name": "Локомотив",
+			"qk4": "012031010112301130132033"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.803219,
 			"Longitude": 37.745742
 		}
 	},
 	{
 		"ID": 419,
-		"Name": "Измайлово",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286309813886,
+		"Lat": 55.788611,
+		"Lon": 37.742778,
+		"Properties": {
+			"name": "Измайлово",
+			"qk4": "012031010112303123321332"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.788611,
 			"Longitude": 37.742778
 		}
 	},
 	{
 		"ID": 420,
-		"Name": "Соколиная Гора",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286311530178,
+		"Lat": 55.77,
+		"Lon": 37.745278,
+		"Properties": {
+			"name": "Соколиная Гора",
+			"qk4": "012031010112321332323002"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.77,
 			"Longitude": 37.745278
 		}
 	},
 	{
-		"ID": 421,
-		"Name": "Шоссе Энтузиастов",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.758633,
-			"Longitude": 37.748477
-		}
-	},
-	{
 		"ID": 422,
-		"Name": "Андроновка",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286402026584,
+		"Lat": 55.741111,
+		"Lon": 37.734444,
+		"Properties": {
+			"name": "Андроновка",
+			"qk4": "012031010130103030301120"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.741111,
 			"Longitude": 37.734444
 		}
 	},
 	{
-		"ID": 423,
-		"Name": "Нижегородская",
-		"Location": {
-			"SRIDType": 4326,
-			"Latitude": 55.732222,
-			"Longitude": 37.72825
+		"ID": 307,
+		"QuadKey": 27286354857629,
+		"Lat": 55.718828,
+		"Lon": 37.607892,
+		"Properties": {
+			"name": "Шаболовская",
+			"qk4": "012031010121133100322131"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.718828,
+			"Longitude": 37.607892
+		}
+	},
+	{
+		"ID": 369,
+		"QuadKey": 27286385857062,
+		"Lat": 55.651451,
+		"Lon": 37.59809,
+		"Properties": {
+			"name": "Севастопольская",
+			"qk4": "012031010123111201020212"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.651451,
+			"Longitude": 37.59809
+		}
+	},
+	{
+		"ID": 370,
+		"QuadKey": 27286386308986,
+		"Lat": 55.640538,
+		"Lon": 37.606065,
+		"Properties": {
+			"name": "Чертановская",
+			"qk4": "012031010123113033131322"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.640538,
+			"Longitude": 37.606065
+		}
+	},
+	{
+		"ID": 371,
+		"QuadKey": 27286388060166,
+		"Lat": 55.622436,
+		"Lon": 37.609047,
+		"Properties": {
+			"name": "Южная",
+			"qk4": "012031010123131323000012"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.622436,
+			"Longitude": 37.609047
+		}
+	},
+	{
+		"ID": 372,
+		"QuadKey": 27286388524695,
+		"Lat": 55.610962,
+		"Lon": 37.602386,
+		"Properties": {
+			"name": "Пражская",
+			"qk4": "012031010123133230122113"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.610962,
+			"Longitude": 37.602386
+		}
+	},
+	{
+		"ID": 374,
+		"QuadKey": 27286396208225,
+		"Lat": 55.583477,
+		"Lon": 37.596999,
+		"Properties": {
+			"name": "Аннино",
+			"qk4": "012031010123331000101201"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.583477,
+			"Longitude": 37.596999
+		}
+	},
+	{
+		"ID": 375,
+		"QuadKey": 27286396484498,
+		"Lat": 55.568201,
+		"Lon": 37.576856,
+		"Properties": {
+			"name": "Бульвар Дмитрия Донского",
+			"qk4": "012031010123332003232102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.568201,
+			"Longitude": 37.576856
+		}
+	},
+	{
+		"ID": 376,
+		"QuadKey": 27286251900697,
+		"Lat": 55.836667,
+		"Lon": 37.575556,
+		"Properties": {
+			"name": "Петровско-Разумовская",
+			"qk4": "012031010103112200330121"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.836667,
+			"Longitude": 37.575556
+		}
+	},
+	{
+		"ID": 377,
+		"QuadKey": 27286253550403,
+		"Lat": 55.822778,
+		"Lon": 37.588056,
+		"Properties": {
+			"name": "Фонвизинская",
+			"qk4": "012031010103130303231003"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.822778,
+			"Longitude": 37.588056
+		}
+	},
+	{
+		"ID": 378,
+		"QuadKey": 27286254186368,
+		"Lat": 55.813333,
+		"Lon": 37.602778,
+		"Properties": {
+			"name": "Бутырская",
+			"qk4": "012031010103133032332000"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.813333,
+			"Longitude": 37.602778
+		}
+	},
+	{
+		"ID": 379,
+		"QuadKey": 27286260505696,
+		"Lat": 55.793723,
+		"Lon": 37.61618,
+		"Properties": {
+			"name": "Марьина Роща",
+			"qk4": "012031010103313111301200"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.793723,
+			"Longitude": 37.61618
+		}
+	},
+	{
+		"ID": 381,
+		"QuadKey": 27286307354238,
+		"Lat": 55.76771,
+		"Lon": 37.621926,
+		"Properties": {
+			"name": "Трубная",
+			"qk4": "012031010112222003121332"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.76771,
+			"Longitude": 37.621926
+		}
+	},
+	{
+		"ID": 382,
+		"QuadKey": 27286307456733,
+		"Lat": 55.766106,
+		"Lon": 37.635688,
+		"Properties": {
+			"name": "Сретенский бульвар",
+			"qk4": "012031010112222130123131"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.766106,
+			"Longitude": 37.635688
+		}
+	},
+	{
+		"ID": 383,
+		"QuadKey": 27286397344691,
+		"Lat": 55.755951,
+		"Lon": 37.659293,
+		"Properties": {
+			"name": "Чкаловская",
+			"qk4": "012031010130001111232303"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.755951,
+			"Longitude": 37.659293
+		}
+	},
+	{
+		"ID": 384,
+		"QuadKey": 27286398291389,
+		"Lat": 55.747027,
+		"Lon": 37.679996,
+		"Properties": {
+			"name": "Римская",
+			"qk4": "012031010130010330312331"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.747027,
+			"Longitude": 37.679996
+		}
+	},
+	{
+		"ID": 385,
+		"QuadKey": 27286400144555,
+		"Lat": 55.732278,
+		"Lon": 37.665325,
+		"Properties": {
+			"name": "Крестьянская застава",
+			"qk4": "012031010130030001102223"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.732278,
+			"Longitude": 37.665325
+		}
+	},
+	{
+		"ID": 387,
+		"QuadKey": 27286406702390,
+		"Lat": 55.706156,
+		"Lon": 37.68544,
+		"Properties": {
+			"name": "Кожуховская",
+			"qk4": "012031010130211002110312"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.706156,
+			"Longitude": 37.68544
+		}
+	},
+	{
+		"ID": 388,
+		"QuadKey": 27286410373585,
+		"Lat": 55.692921,
+		"Lon": 37.728338,
+		"Properties": {
+			"name": "Печатники",
+			"qk4": "012031010130303002213101"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.692921,
+			"Longitude": 37.728338
+		}
+	},
+	{
+		"ID": 389,
+		"QuadKey": 27286411195885,
+		"Lat": 55.690446,
+		"Lon": 37.754314,
+		"Properties": {
+			"name": "Волжская",
+			"qk4": "012031010130312023113231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.690446,
+			"Longitude": 37.754314
+		}
+	},
+	{
+		"ID": 390,
+		"QuadKey": 27286412919955,
+		"Lat": 55.676596,
+		"Lon": 37.761639,
+		"Properties": {
+			"name": "Люблино",
+			"qk4": "012031010130330300102103"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.676596,
+			"Longitude": 37.761639
+		}
+	},
+	{
+		"ID": 391,
+		"QuadKey": 27286412721449,
+		"Lat": 55.658817,
+		"Lon": 37.748415,
+		"Properties": {
+			"name": "Братиславская",
+			"qk4": "012031010130323333310221"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.658817,
+			"Longitude": 37.748415
+		}
+	},
+	{
+		"ID": 393,
+		"QuadKey": 27286437174605,
+		"Lat": 55.6325,
+		"Lon": 37.743333,
+		"Properties": {
+			"name": "Борисово",
+			"qk4": "012031010132121101311031"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.6325,
+			"Longitude": 37.743333
+		}
+	},
+	{
+		"ID": 394,
+		"QuadKey": 27286437357569,
+		"Lat": 55.621667,
+		"Lon": 37.743611,
+		"Properties": {
+			"name": "Шипиловская",
+			"qk4": "012031010132121332200001"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.621667,
+			"Longitude": 37.743611
+		}
+	},
+	{
+		"ID": 395,
+		"QuadKey": 27286437850690,
+		"Lat": 55.611944,
+		"Lon": 37.745278,
+		"Properties": {
+			"name": "Зябликово",
+			"qk4": "012031010132123312321002"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.611944,
+			"Longitude": 37.745278
+		}
+	},
+	{
+		"ID": 396,
+		"QuadKey": 27286430864063,
+		"Lat": 55.654327,
+		"Lon": 37.647705,
+		"Properties": {
+			"name": "Каширская",
+			"qk4": "012031010132001031022333"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.654327,
+			"Longitude": 37.647705
+		}
+	},
+	{
+		"ID": 302,
+		"QuadKey": 27286307051218,
+		"Lat": 55.772315,
+		"Lon": 37.63285,
+		"Properties": {
+			"name": "Сухаревская",
+			"qk4": "012031010112220321123102"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.772315,
+			"Longitude": 37.63285
+		}
+	},
+	{
+		"ID": 306,
+		"QuadKey": 27286354349004,
+		"Lat": 55.731232,
+		"Lon": 37.612851,
+		"Properties": {
+			"name": "Октябрьская",
+			"qk4": "012031010121131110233030"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.731232,
+			"Longitude": 37.612851
+		}
+	},
+	{
+		"ID": 309,
+		"QuadKey": 27286360258156,
+		"Lat": 55.687147,
+		"Lon": 37.5723,
+		"Properties": {
+			"name": "Академическая",
+			"qk4": "012031010121303313121230"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.687147,
+			"Longitude": 37.5723
+		}
+	},
+	{
+		"ID": 311,
+		"QuadKey": 27286362133101,
+		"Lat": 55.670077,
+		"Lon": 37.554493,
+		"Properties": {
+			"name": "Новые Черемушки",
+			"qk4": "012031010121323001021231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.670077,
+			"Longitude": 37.554493
+		}
+	},
+	{
+		"ID": 316,
+		"QuadKey": 27286392812541,
+		"Lat": 55.606182,
+		"Lon": 37.5334,
+		"Properties": {
+			"name": "Ясенево",
+			"qk4": "012031010123300003033331"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.606182,
+			"Longitude": 37.5334
+		}
+	},
+	{
+		"ID": 322,
+		"QuadKey": 27286248871898,
+		"Lat": 55.8094,
+		"Lon": 37.463241,
+		"Properties": {
+			"name": "Щукинская",
+			"qk4": "012031010103022331133122"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.8094,
+			"Longitude": 37.463241
+		}
+	},
+	{
+		"ID": 327,
+		"QuadKey": 27286262411110,
+		"Lat": 55.760793,
+		"Lon": 37.581242,
+		"Properties": {
+			"name": "Баррикадная",
+			"qk4": "012031010103332212331212"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.760793,
+			"Longitude": 37.581242
+		}
+	},
+	{
+		"ID": 332,
+		"QuadKey": 27286400157878,
+		"Lat": 55.731546,
+		"Lon": 37.666917,
+		"Properties": {
+			"name": "Пролетарская",
+			"qk4": "012031010130030010202312"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.731546,
+			"Longitude": 37.666917
+		}
+	},
+	{
+		"ID": 338,
+		"QuadKey": 27286423320811,
+		"Lat": 55.702036,
+		"Lon": 37.851044,
+		"Properties": {
+			"name": "Лермонтовский проспект",
+			"qk4": "012031010131210123203223"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.702036,
+			"Longitude": 37.851044
+		}
+	},
+	{
+		"ID": 344,
+		"QuadKey": 27286312758646,
+		"Lat": 55.75809,
+		"Lon": 37.751703,
+		"Properties": {
+			"name": "Шоссе энтузиастов",
+			"qk4": "012031010112332222311312"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.75809,
+			"Longitude": 37.751703
+		}
+	},
+	{
+		"ID": 349,
+		"QuadKey": 27286351017681,
+		"Lat": 55.7491,
+		"Lon": 37.5395,
+		"Properties": {
+			"name": "Деловой центр",
+			"qk4": "012031010121100213123101"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.7491,
+			"Longitude": 37.5395
+		}
+	},
+	{
+		"ID": 350,
+		"QuadKey": 27286348655640,
+		"Lat": 55.736478,
+		"Lon": 37.514401,
+		"Properties": {
+			"name": "Парк Победы",
+			"qk4": "012031010121013212300120"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.736478,
+			"Longitude": 37.514401
+		}
+	},
+	{
+		"ID": 355,
+		"QuadKey": 27286251900730,
+		"Lat": 55.836565,
+		"Lon": 37.575512,
+		"Properties": {
+			"name": "Петровско-Разумовская",
+			"qk4": "012031010103112200330322"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.836565,
+			"Longitude": 37.575512
+		}
+	},
+	{
+		"ID": 362,
+		"QuadKey": 27286352369739,
+		"Lat": 55.750399,
+		"Lon": 37.60934,
+		"Properties": {
+			"name": "Боровицкая",
+			"qk4": "012031010121111301201023"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.750399,
+			"Longitude": 37.60934
+		}
+	},
+	{
+		"ID": 365,
+		"QuadKey": 27286399786875,
+		"Lat": 55.70961,
+		"Lon": 37.622569,
+		"Properties": {
+			"name": "Тульская",
+			"qk4": "012031010130022221331323"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.70961,
+			"Longitude": 37.622569
+		}
+	},
+	{
+		"ID": 366,
+		"QuadKey": 27286407485756,
+		"Lat": 55.682099,
+		"Lon": 37.620917,
+		"Properties": {
+			"name": "Нагатинская",
+			"qk4": "012031010130220001210330"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.682099,
+			"Longitude": 37.620917
+		}
+	},
+	{
+		"ID": 368,
+		"QuadKey": 27286363338318,
+		"Lat": 55.662379,
+		"Lon": 37.605274,
+		"Properties": {
+			"name": "Нахимовский проспект",
+			"qk4": "012031010121333213121032"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.662379,
+			"Longitude": 37.605274
+		}
+	},
+	{
+		"ID": 399,
+		"QuadKey": 27286751310367,
+		"Lat": 55.537977,
+		"Lon": 37.515899,
+		"Properties": {
+			"name": "Бунинская аллея",
+			"qk4": "012031010301013213020133"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.537977,
+			"Longitude": 37.515899
 		}
 	},
 	{
 		"ID": 424,
-		"Name": "Новохохловская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286403491971,
+		"Lat": 55.723889,
+		"Lon": 37.716111,
+		"Properties": {
+			"name": "Новохохловская",
+			"qk4": "012031010130120302202003"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.723889,
 			"Longitude": 37.716111
 		}
 	},
 	{
 		"ID": 425,
-		"Name": "Угрешская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286401003963,
+		"Lat": 55.718333,
+		"Lon": 37.697778,
+		"Properties": {
+			"name": "Угрешская",
+			"qk4": "012031010130033103012323"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.718333,
 			"Longitude": 37.697778
 		}
 	},
 	{
 		"ID": 426,
-		"Name": "Дубровка",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286400879237,
+		"Lat": 55.71268,
+		"Lon": 37.677775,
+		"Properties": {
+			"name": "Дубровка",
+			"qk4": "012031010130032310222011"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.71268,
 			"Longitude": 37.677775
 		}
 	},
 	{
 		"ID": 427,
-		"Name": "Автозаводская",
-		"Location": {
-			"SRIDType": 4326,
+		"QuadKey": 27286406434558,
+		"Lat": 55.70631,
+		"Lon": 37.66314,
+		"Properties": {
+			"name": "Автозаводская",
+			"qk4": "012031010130210000323332"
+		},
+		"Point": {
+			"SRID": 4326,
 			"Latitude": 55.70631,
 			"Longitude": 37.66314
+		}
+	},
+	{
+		"ID": 428,
+		"QuadKey": 27286405829009,
+		"Lat": 55.698333,
+		"Lon": 37.648333,
+		"Properties": {
+			"name": "ЗИЛ",
+			"qk4": "012031010130201231012101"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.698333,
+			"Longitude": 37.648333
+		}
+	},
+	{
+		"ID": 433,
+		"QuadKey": 27286351419900,
+		"Lat": 55.740833,
+		"Lon": 37.533333,
+		"Properties": {
+			"name": "Кутузовская",
+			"qk4": "012031010121102021213330"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.740833,
+			"Longitude": 37.533333
+		}
+	},
+	{
+		"ID": 438,
+		"QuadKey": 27286255641933,
+		"Lat": 55.799167,
+		"Lon": 37.498889,
+		"Properties": {
+			"name": "Панфиловская",
+			"qk4": "012031010103210302111031"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.799167,
+			"Longitude": 37.498889
+		}
+	},
+	{
+		"ID": 204,
+		"QuadKey": 27286309292535,
+		"Lat": 55.802787,
+		"Lon": 37.744863,
+		"Properties": {
+			"name": "Черкизовская",
+			"qk4": "012031010112301130213313"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.802787,
+			"Longitude": 37.744863
+		}
+	},
+	{
+		"ID": 210,
+		"QuadKey": 27286307468485,
+		"Lat": 55.76499,
+		"Lon": 37.638293,
+		"Properties": {
+			"name": "Чистые пруды",
+			"qk4": "012031010112222133103011"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.76499,
+			"Longitude": 37.638293
+		}
+	},
+	{
+		"ID": 216,
+		"QuadKey": 27286354060844,
+		"Lat": 55.727462,
+		"Lon": 37.58022,
+		"Properties": {
+			"name": "Фрунзенская",
+			"qk4": "012031010121130032120230"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.727462,
+			"Longitude": 37.58022
+		}
+	},
+	{
+		"ID": 222,
+		"QuadKey": 27286380673944,
+		"Lat": 55.6459,
+		"Lon": 37.4725,
+		"Properties": {
+			"name": "Тропарево",
+			"qk4": "012031010123001233232120"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.6459,
+			"Longitude": 37.4725
+		}
+	},
+	{
+		"ID": 227,
+		"QuadKey": 27286249735683,
+		"Lat": 55.818923,
+		"Lon": 37.497791,
+		"Properties": {
+			"name": "Войковская",
+			"qk4": "012031010103032100120003"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.818923,
+			"Longitude": 37.497791
+		}
+	},
+	{
+		"ID": 232,
+		"QuadKey": 27286262513942,
+		"Lat": 55.769808,
+		"Lon": 37.596192,
+		"Properties": {
+			"name": "Маяковская",
+			"qk4": "012031010103333000010112"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.769808,
+			"Longitude": 37.596192
+		}
+	},
+	{
+		"ID": 237,
+		"QuadKey": 27286405729117,
+		"Lat": 55.706634,
+		"Lon": 37.657008,
+		"Properties": {
+			"name": "Автозаводская",
+			"qk4": "012031010130201110231131"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.706634,
+			"Longitude": 37.657008
+		}
+	},
+	{
+		"ID": 243,
+		"QuadKey": 27286434685772,
+		"Lat": 55.61269,
+		"Lon": 37.695214,
+		"Properties": {
+			"name": "Орехово",
+			"qk4": "012031010132033302031030"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.61269,
+			"Longitude": 37.695214
+		}
+	},
+	{
+		"ID": 244,
+		"QuadKey": 27286437596106,
+		"Lat": 55.610131,
+		"Lon": 37.717111,
+		"Properties": {
+			"name": "Домодедовская",
+			"qk4": "012031010132122320233022"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.610131,
+			"Longitude": 37.717111
+		}
+	},
+	{
+		"ID": 247,
+		"QuadKey": 27286315898213,
+		"Lat": 55.809962,
+		"Lon": 37.798261,
+		"Properties": {
+			"name": "Щелковская",
+			"qk4": "012031010113022221111211"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.809962,
+			"Longitude": 37.798261
+		}
+	},
+	{
+		"ID": 251,
+		"QuadKey": 27286309679823,
+		"Lat": 55.783096,
+		"Lon": 37.719289,
+		"Properties": {
+			"name": "Семеновская",
+			"qk4": "012031010112302323023033"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.783096,
+			"Longitude": 37.719289
+		}
+	},
+	{
+		"ID": 256,
+		"QuadKey": 27286352228896,
+		"Lat": 55.752312,
+		"Lon": 37.60349,
+		"Properties": {
+			"name": "Арбатская",
+			"qk4": "012031010121111033020200"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.752312,
+			"Longitude": 37.60349
+		}
+	},
+	{
+		"ID": 262,
+		"QuadKey": 27286335768127,
+		"Lat": 55.741375,
+		"Lon": 37.415627,
+		"Properties": {
+			"name": "Молодежная",
+			"qk4": "012031010120112130120333"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.741375,
+			"Longitude": 37.415627
+		}
+	},
+	{
+		"ID": 265,
+		"QuadKey": 27286235936396,
+		"Lat": 55.823342,
+		"Lon": 37.385214,
+		"Properties": {
+			"name": "Мякинино",
+			"qk4": "012031010102121213122030"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.823342,
+			"Longitude": 37.385214
+		}
+	},
+	{
+		"ID": 268,
+		"QuadKey": 27286230630196,
+		"Lat": 55.853634,
+		"Lon": 37.353108,
+		"Properties": {
+			"name": "Пятницкое шоссе",
+			"qk4": "012031010102011113330310"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.853634,
+			"Longitude": 37.353108
+		}
+	},
+	{
+		"ID": 274,
+		"QuadKey": 27286351421149,
+		"Lat": 55.740544,
+		"Lon": 37.5341,
+		"Properties": {
+			"name": "Кутузовская",
+			"qk4": "012031010121102021323131"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.740544,
+			"Longitude": 37.5341
+		}
+	},
+	{
+		"ID": 279,
+		"QuadKey": 27286352275309,
+		"Lat": 55.752255,
+		"Lon": 37.608775,
+		"Properties": {
+			"name": "Александровский сад",
+			"qk4": "012031010121111122131231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.752255,
+			"Longitude": 37.608775
+		}
+	},
+	{
+		"ID": 284,
+		"QuadKey": 27286307280109,
+		"Lat": 55.775672,
+		"Lon": 37.654772,
+		"Properties": {
+			"name": "Комсомольская",
+			"qk4": "012031010112221301103231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.775672,
+			"Longitude": 37.654772
+		}
+	},
+	{
+		"ID": 290,
+		"QuadKey": 27286352679548,
+		"Lat": 55.735221,
+		"Lon": 37.593095,
+		"Properties": {
+			"name": "Парк культуры",
+			"qk4": "012031010121112331021330"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.735221,
+			"Longitude": 37.593095
+		}
+	},
+	{
+		"ID": 296,
+		"QuadKey": 27286296664165,
+		"Lat": 55.855558,
+		"Lon": 37.653379,
+		"Properties": {
+			"name": "Свиблово",
+			"qk4": "012031010112001101201211"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.855558,
+			"Longitude": 37.653379
+		}
+	},
+	{
+		"ID": 297,
+		"QuadKey": 27286296591496,
+		"Lat": 55.844597,
+		"Lon": 37.637811,
+		"Properties": {
+			"name": "Ботанический сад",
+			"qk4": "012031010112000333302020"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.844597,
+			"Longitude": 37.637811
+		}
+	},
+	{
+		"ID": 203,
+		"QuadKey": 27286303448938,
+		"Lat": 55.814916,
+		"Lon": 37.732227,
+		"Properties": {
+			"name": "Бульвар Рокоссовского",
+			"qk4": "012031010112123021331222"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.814916,
+			"Longitude": 37.732227
+		}
+	},
+	{
+		"ID": 260,
+		"QuadKey": 27286349071616,
+		"Lat": 55.729542,
+		"Lon": 37.470973,
+		"Properties": {
+			"name": "Славянский бульвар",
+			"qk4": "012031010121021030110000"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.729542,
+			"Longitude": 37.470973
+		}
+	},
+	{
+		"ID": 367,
+		"QuadKey": 27286362887851,
+		"Lat": 55.672962,
+		"Lon": 37.610397,
+		"Properties": {
+			"name": "Нагорная",
+			"qk4": "012031010121331321122223"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.672962,
+			"Longitude": 37.610397
+		}
+	},
+	{
+		"ID": 373,
+		"QuadKey": 27286394300684,
+		"Lat": 55.596753,
+		"Lon": 37.601498,
+		"Properties": {
+			"name": "Улица Академика Янгеля",
+			"qk4": "012031010123311232210030"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.596753,
+			"Longitude": 37.601498
+		}
+	},
+	{
+		"ID": 380,
+		"QuadKey": 27286262073133,
+		"Lat": 55.781667,
+		"Lon": 37.613889,
+		"Properties": {
+			"name": "Достоевская",
+			"qk4": "012031010103331110130231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.781667,
+			"Longitude": 37.613889
+		}
+	},
+	{
+		"ID": 386,
+		"QuadKey": 27286400743048,
+		"Lat": 55.71807,
+		"Lon": 37.676259,
+		"Properties": {
+			"name": "Дубровка",
+			"qk4": "012031010130032103122020"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.71807,
+			"Longitude": 37.676259
+		}
+	},
+	{
+		"ID": 392,
+		"QuadKey": 27286435228213,
+		"Lat": 55.649158,
+		"Lon": 37.743844,
+		"Properties": {
+			"name": "Марьино",
+			"qk4": "012031010132101312220311"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.649158,
+			"Longitude": 37.743844
+		}
+	},
+	{
+		"ID": 397,
+		"QuadKey": 27286430590358,
+		"Lat": 55.653294,
+		"Lon": 37.619522,
+		"Properties": {
+			"name": "Варшавская",
+			"qk4": "012031010132000022112112"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.653294,
+			"Longitude": 37.619522
+		}
+	},
+	{
+		"ID": 403,
+		"QuadKey": 27286396482049,
+		"Lat": 55.569194,
+		"Lon": 37.576074,
+		"Properties": {
+			"name": "Улица Старокачаловская",
+			"qk4": "012031010123332003020001"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.569194,
+			"Longitude": 37.576074
+		}
+	},
+	{
+		"ID": 409,
+		"QuadKey": 27286298613442,
+		"Lat": 55.821821,
+		"Lon": 37.627167,
+		"Properties": {
+			"name": "Улица Академика Королёва",
+			"qk4": "012031010112020231123002"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.821821,
+			"Longitude": 37.627167
+		}
+	},
+	{
+		"ID": 416,
+		"QuadKey": 27286299828542,
+		"Lat": 55.83,
+		"Lon": 37.700556,
+		"Properties": {
+			"name": "Белокаменная",
+			"qk4": "012031010112031112010332"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.83,
+			"Longitude": 37.700556
+		}
+	},
+	{
+		"ID": 421,
+		"QuadKey": 27286312056237,
+		"Lat": 55.758633,
+		"Lon": 37.748477,
+		"Properties": {
+			"name": "Шоссе Энтузиастов",
+			"qk4": "012031010112323333112231"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.758633,
+			"Longitude": 37.748477
+		}
+	},
+	{
+		"ID": 423,
+		"QuadKey": 27286403547975,
+		"Lat": 55.732222,
+		"Lon": 37.72825,
+		"Properties": {
+			"name": "Нижегородская",
+			"qk4": "012031010130121000031013"
+		},
+		"Point": {
+			"SRID": 4326,
+			"Latitude": 55.732222,
+			"Longitude": 37.72825
 		}
 	}
 ]
