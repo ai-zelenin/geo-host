@@ -83,7 +83,9 @@ func (p *PostGISDataSource) LoadMapView(ctx context.Context, mr *geo.MapRequest,
 	if err != nil && err != sql.ErrNoRows {
 		return err
 	}
+
 	for _, object := range objects {
+		// todo here we can put object into cache
 		if object.Count > 1 {
 			point, err := p.gs.TileIDToCenterPoint(object.ID)
 			if err != nil {
