@@ -19,7 +19,7 @@ func NewGeographicSystem(cfg *Config) *GeographicSystem {
 	}
 	return &GeographicSystem{
 		Projection:    projection,
-		TileSystem:    NewTileSystem(cfg.MinZoom, cfg.MaxZoom, float64(cfg.TileSize)),
+		TileSystem:    NewTileSystem(cfg.MinZoom, cfg.MaxZoom, cfg.TileSize),
 		QuadKeySystem: NewQuadKeySystem(cfg.MinZoom, cfg.MaxZoom),
 		cfg:           cfg,
 	}
@@ -31,20 +31,20 @@ func (g *GeographicSystem) WGS84ToQuadKey(lat, long float64) QuadKey {
 	return g.QuadKeySystem.TileXYToQuadKey(tx, ty, g.cfg.MaxZoom)
 }
 
-func (g *GeographicSystem) DrawROMBBox(rom *MapRequest, fc *FeatureCollection) error {
+func (g *GeographicSystem) DrawROMBBox(mr *MapRequest, fc *FeatureCollection) error {
 	props := map[string]interface{}{
 		"options": map[string]interface{}{
 			"fillColor": fmt.Sprintf("rgba(27, 27, 125, 0.3)"),
 		},
 	}
-	return fc.Add("lat-lon-polygon", rom.AsPolygon(), props)
+	return fc.Add("lat-lon-polygon", mr.AsPolygon(), props)
 }
 
-func (g *GeographicSystem) DrawROMTiles(rom *MapRequest, fc *FeatureCollection) error {
-	return rom.IterateTiles(func(x, y int64) error {
-		tilePolygon := g.TileXYToPolygon(x, y, rom.Zoom)
+func (g *GeographicSystem) DrawROMTiles(mr *MapRequest, fc *FeatureCollection) error {
+	return mr.IterateTiles(func(x, y int64) error {
+		tilePolygon := g.TileXYToPolygon(x, y, mr.Zoom)
 		id := fmt.Sprintf("tx:%d ty:%d", x, y)
-		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, rom.Zoom)
+		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, mr.Zoom)
 		minQk, maxQk := g.QuadKeySystem.QuadKeyRange(qk)
 		return fc.Add(id, tilePolygon, map[string]interface{}{
 			"hintContent":  id,
@@ -59,21 +59,39 @@ func (g *GeographicSystem) DrawROMTiles(rom *MapRequest, fc *FeatureCollection) 
 	})
 }
 
-func (g *GeographicSystem) MRToTiles(rom *MapRequest) (tiles []Tile, lqkMin, rqkMax QuadKey, tileBucketBitSize int64) {
-	result := make([]Tile, 0, rom.TilesNumber())
-	_ = rom.IterateTiles(func(x, y int64) error {
-		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, rom.Zoom)
-		result = append(result, Tile{
+func (g *GeographicSystem) MRToTiles(mr *MapRequest) (tiles map[int64]Tile) {
+	result := make(map[int64]Tile, mr.TilesNumber())
+	_ = mr.IterateTiles(func(x, y int64) error {
+		qk := g.QuadKeySystem.TileXYToQuadKey(x, y, mr.Zoom)
+		id := qk.Int64()
+		result[id] = Tile{
+			ID:      id,
 			X:       x,
 			Y:       y,
-			Zoom:    rom.Zoom,
+			Zoom:    mr.Zoom,
 			QuadKey: qk,
-		})
+		}
 		return nil
 	})
-	lqkMin, _ = g.QuadKeySystem.QuadKeyRange(result[0].QuadKey)
-	_, rqkMax = g.QuadKeySystem.QuadKeyRange(result[len(result)-1].QuadKey)
-	return result, lqkMin, rqkMax, g.QuadKeySystem.Base10Delta(rom.Zoom)
+	return result
+}
+
+func (g *GeographicSystem) TileIDToCenterPoint(tileID int64) (*GeographicPoint, error) {
+	qk := NewQuadKeyFromInt64(tileID)
+	tx, ty, err := g.QuadKeySystem.QuadKeyToTileXY(qk)
+	if err != nil {
+		return nil, err
+	}
+	return g.TileXYToCenterPoint(tx, ty, qk.Len()), nil
+}
+
+func (g *GeographicSystem) TileXYToCenterPoint(tx, ty int64, z int64) *GeographicPoint {
+	var gpx, gpy = g.TileSystem.TileXYToGlobalPixelsCenter(tx, ty)
+	lat, lon := g.Projection.FromGlobalPixels(gpx, gpy, z)
+	return &GeographicPoint{
+		Latitude:  lat,
+		Longitude: lon,
+	}
 }
 
 func (g *GeographicSystem) TileXYToPoint(tx, ty int64, z int64) *GeographicPoint {

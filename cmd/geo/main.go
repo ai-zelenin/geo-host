@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/ai-zelenin/geo-host/pkg/geo"
 	"github.com/ai-zelenin/geo-host/pkg/pgds"
+	"github.com/ai-zelenin/geo-host/pkg/server"
 	"github.com/go-pg/pg/v10"
 	"io/ioutil"
 	"log"
@@ -34,6 +35,9 @@ func main() {
 			for _, child := range obj.ClusterData {
 				balloonContent += fmt.Sprintf("%s<br>\n", child.Properties["name"])
 			}
+			//"options": map[string]interface{}{
+			//				"fillColor": fmt.Sprintf("rgba(27, 125, 27, 0.2)"),
+			//			},
 
 		} else {
 			iconContent = obj.Properties["name"].(string)
@@ -43,7 +47,8 @@ func main() {
 			"iconContent":    iconContent,
 			"balloonContent": balloonContent,
 			"options": map[string]interface{}{
-				"preset": "islands#blackStretchyIcon",
+				"preset":    "islands#blackStretchyIcon",
+				"fillColor": fmt.Sprintf("rgba(27, 125, 27, 0.2)"),
 			},
 		}
 	})
@@ -51,15 +56,15 @@ func main() {
 		log.Fatal(err)
 	}
 	ExportPoints(ds, gs)
-	//cfg := &server.Config{
-	//	ServerAddr: ":8080",
-	//	StaticDir:  "./front",
-	//}
-	//srv := server.NewServer(cfg, ds, gs)
-	//err = srv.Start()
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
+	cfg := &server.Config{
+		ServerAddr: ":8080",
+		StaticDir:  "./front",
+	}
+	srv := server.NewServer(cfg, ds, gs)
+	err = srv.Start()
+	if err != nil {
+		log.Fatal(err)
+	}
 
 }
 
@@ -91,9 +96,10 @@ func ExportPoints(ds geo.DataSource, gs *geo.GeographicSystem) {
 	}
 	for _, point := range points {
 		err = ds.StoreGeoData(context.Background(), &pgds.GeoObject{
-			ID:  point.ID,
-			Lat: point.Location.Latitude,
-			Lon: point.Location.Longitude,
+			ID:    point.ID,
+			Lat:   point.Location.Latitude,
+			Lon:   point.Location.Longitude,
+			Point: point.Location,
 			Properties: map[string]interface{}{
 				"name": point.Name,
 				"qk4":  gs.WGS84ToQuadKey(point.Location.Latitude, point.Location.Longitude).String(),

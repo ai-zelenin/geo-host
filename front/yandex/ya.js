@@ -3,10 +3,10 @@ ymaps.ready(['projection.wgs84Mercator', 'projection.sphericalMercator']).then(f
     const params = new URLSearchParams(url.search);
     let debug = params.get("debug");
     let clusterLevel = params.get("clusterLevel");
-    if (debug === ""){
+    if (!debug){
         debug = "false"
     }
-    if (clusterLevel === ""){
+    if (!clusterLevel){
         clusterLevel = "1"
     }
     console.log(window.location);
@@ -27,9 +27,9 @@ ymaps.ready(['projection.wgs84Mercator', 'projection.sphericalMercator']).then(f
         zoom: 14,
         controls: ['zoomControl', 'searchControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
     }
-    const projSettings = {
-        projection: ymaps.projection.sphericalMercator
-    }
+    // const projSettings = {
+    //     projection: ymaps.projection.sphericalMercator
+    // }
     const map = new ymaps.Map('map', mapSettings);
     map.geoObjects.add(remoteObjectManager);
     map.controls.get('zoomControl').options.set({size: 'small'});

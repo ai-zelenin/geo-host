@@ -9,7 +9,7 @@ import (
 
 type GeographicCollection struct {
 	SRID
-	Figures []GEOM
+	Figures []Primitive
 }
 
 func (p *GeographicCollection) FromGeom(t geom.T) error {
@@ -18,20 +18,9 @@ func (p *GeographicCollection) FromGeom(t geom.T) error {
 		return fmt.Errorf("wrong type %T", t)
 	}
 	p.SRID = SRID(gc.SRID())
-	p.Figures = make([]GEOM, gc.NumGeoms())
+	p.Figures = make([]Primitive, gc.NumGeoms())
 	for i, gt := range gc.Geoms() {
-		var figure GEOM
-		switch gt.(type) {
-		case *geom.Point:
-			figure = new(GeographicPoint)
-		case *geom.Polygon:
-			figure = new(GeographicPolygon)
-		case *geom.GeometryCollection:
-			figure = new(GeographicCollection)
-		default:
-			return fmt.Errorf("unkonwn geo type in collection")
-		}
-		err := figure.FromGeom(gt)
+		figure, err := FromGeom(gt)
 		if err != nil {
 			return err
 		}

@@ -24,7 +24,7 @@ func NewQuadKeySystem(minZoom int64, maxZoom int64) *QuadKeySystem {
 }
 
 func (q *QuadKeySystem) TileXYToQuadKey(tx, ty int64, zoom int64) QuadKey {
-	quadKey := make([]rune, 0, MaxZoom)
+	quadKey := make([]rune, 0, DefaultMaxZoom)
 	for i := zoom; i >= q.minZoom; i-- {
 		var digit byte = 0
 		var mask int64 = 1 << i
@@ -84,30 +84,12 @@ func (q *QuadKeySystem) Contains(point QuadKey, tile QuadKey) bool {
 	return false
 }
 
-func (q *QuadKeySystem) Base10Delta(len int64) int64 {
-	diff := q.maxZoom - len
-	return (1 << diff * 2) + 1
-}
-
-func (q *QuadKeySystem) ForEachZoom(qk QuadKey, cb func(x, y, z int64) error) error {
-	n := len(qk)
-	reduce := 0
-	for {
-		newLen := int64(n - reduce)
-		if newLen <= q.minZoom {
-			return nil
-		}
-		qk = qk[:newLen]
-		tx, ty, err := q.QuadKeyToTileXY(qk)
-		if err != nil {
-			return err
-		}
-		err = cb(tx, ty, newLen)
-		if err != nil {
-			return err
-		}
-		reduce++
+func (q *QuadKeySystem) BitDelta(len int64) int64 {
+	if len > q.maxZoom {
+		len = q.maxZoom
 	}
+	diff := q.maxZoom - len
+	return diff * 2
 }
 
 func (q *QuadKeySystem) CreateMask(qk QuadKey, zoom int64, clusterLevel int64) QuadKey {

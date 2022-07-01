@@ -18,7 +18,7 @@ func NewYandexROMHandler(gs *geo.GeographicSystem, ds geo.DataSource) *YandexROM
 }
 
 func (y *YandexROMHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	mr, err := geo.ParseRequest(
+	mr, err := geo.ParseMapRequest(
 		r.URL.Query().Get("bbox"),
 		r.URL.Query().Get("tiles"),
 		r.URL.Query().Get("zoom"),

@@ -9,7 +9,6 @@ import (
 	"github.com/uptrace/bun/dialect/pgdialect"
 	"github.com/uptrace/bun/driver/pgdriver"
 	"github.com/uptrace/bun/extra/bundebug"
-	"sort"
 )
 
 type PropertiesMapper func(obj *Cluster) map[string]interface{}
@@ -21,13 +20,12 @@ type GeoObject struct {
 	Lat           float64                `bun:"lat,notnull"`
 	Lon           float64                `bun:"lon,notnull"`
 	Properties    map[string]interface{} `bun:"properties"`
+	Point         *geo.GeographicPoint   `bun:"point,type:geography(POINT,4326)"`
 }
 
 type Cluster struct {
 	ID          int64        `bun:"tile_id"`
 	MinID       int64        `bun:"min_id"`
-	AvgLat      float64      `bun:"cluster_lat"`
-	AvgLon      float64      `bun:"cluster_lon"`
 	Count       int64        `bun:"count"`
 	ClusterData []*GeoObject `bun:"cluster_data"`
 	GeoObject
@@ -46,6 +44,10 @@ func NewPostGISDataSource(ctx context.Context, dsn string, gs *geo.GeographicSys
 	if err != nil {
 		return nil, err
 	}
+	_, err = db.NewCreateIndex().Model(new(GeoObject)).Index("point_st_gist").Column("point").Using("SPGIST").IfNotExists().Exec(ctx)
+	if err != nil {
+		return nil, err
+	}
 	db.AddQueryHook(bundebug.NewQueryHook(bundebug.WithVerbose(true)))
 	return &PostGISDataSource{
 		gs:     gs,
@@ -55,20 +57,19 @@ func NewPostGISDataSource(ctx context.Context, dsn string, gs *geo.GeographicSys
 }
 
 func (p *PostGISDataSource) LoadMapView(ctx context.Context, mr *geo.MapRequest, fc *geo.FeatureCollection) error {
-	tiles, minQk, maxQk, tileSize := p.gs.MRToTiles(mr)
-	var min, max = minQk.Int64(), maxQk.Int64()
-	sort.Slice(tiles, func(i, j int) bool {
-		return tiles[i].QuadKey.Int64() < tiles[j].QuadKey.Int64()
-	})
-	objects := make([]*Cluster, 0, 100)
+	tiles := p.gs.MRToTiles(mr)
+	bitDelta := p.gs.QuadKeySystem.BitDelta(mr.Zoom)
+	tileIDs := make([]int64, 0, len(tiles))
+	for id := range tiles {
+		tileIDs = append(tileIDs, id)
+	}
+	objects := make([]*Cluster, 0, 25*4*4)
 	subq := p.db.NewSelect().Model((*GeoObject)(nil))
 	subq.ColumnExpr("COUNT(id) AS count")
 	subq.ColumnExpr("MIN(id) AS min_id")
-	subq.ColumnExpr("AVG(lon) AS cluster_lon")
-	subq.ColumnExpr("AVG(lat) AS cluster_lat")
-	subq.ColumnExpr("json_agg(row_to_json(geo_object)) as cluster_data")
-	subq.ColumnExpr("width_bucket(quad_key::numeric, ?::numeric, ?::numeric,?) as tile_id", min, max, tileSize)
-	subq.Where("quad_key >= ? AND quad_key <= ?", min, max)
+	subq.ColumnExpr("json_agg(json_build_object('id',id,'properties',json_build_object('name',properties->>'name'))) as cluster_data")
+	subq.ColumnExpr("quad_key >> ? as tile_id", p.gs.QuadKeySystem.BitDelta(mr.Zoom+2))
+	subq.Where("quad_key >> ? in (?)", bitDelta, bun.In(tileIDs))
 	subq.Order("tile_id")
 	subq.Group("tile_id")
 	q := p.db.NewSelect()
@@ -80,8 +81,10 @@ func (p *PostGISDataSource) LoadMapView(ctx context.Context, mr *geo.MapRequest,
 	}
 	for _, object := range objects {
 		if object.Count > 1 {
-			tile := tiles[object.ID]
-			point := p.gs.TileXYToPoint(tile.X, tile.Y, tile.Zoom)
+			point, err := p.gs.TileIDToCenterPoint(object.ID)
+			if err != nil {
+				return err
+			}
 			err = fc.Add(object.ID, point, p.mapper(object))
 			if err != nil {
 				return err
@@ -112,17 +115,12 @@ func (p *PostGISDataSource) StoreGeoData(ctx context.Context, d interface{}) err
 		return err
 	}
 	defer tx.Rollback()
-	err = p.gs.QuadKeySystem.ForEachZoom(qk, func(x, y, z int64) error {
-		fmt.Println(x, y, z)
-		return nil
-	})
 	if err != nil {
 		return err
 	}
-	_, err = tx.NewInsert().Model(d).On("conflict", "update").Exec(ctx)
+	_, err = tx.NewInsert().Model(d).On("CONFLICT (id) DO UPDATE").Exec(ctx)
 	if err != nil {
 		return err
 	}
-
 	return tx.Commit()
 }

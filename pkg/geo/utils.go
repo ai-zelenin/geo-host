@@ -53,7 +53,7 @@ func ParseAsInt64Array(line string) ([]int64, error) {
 	return result, nil
 }
 
-func ToWKT(g GEOM) string {
+func ToWKT(g Primitive) string {
 	ge, err := g.ToGeom()
 	if err != nil {
 		return err.Error()

@@ -18,7 +18,6 @@ func NewServer(cfg *Config, ds geo.DataSource, gs *geo.GeographicSystem) *Server
 func (s *Server) Start() error {
 	mux := http.NewServeMux()
 	fs := http.FileServer(http.Dir(s.cfg.StaticDir))
-	//mux.Handle("/", RedirectPermanent("/yandex/index.html"))
 	mux.Handle("/", fs)
 	mux.Handle("/api/v1/yandex", NewYandexROMHandler(s.gs, s.ds))
 	srv := http.Server{

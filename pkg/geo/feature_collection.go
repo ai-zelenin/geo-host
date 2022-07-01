@@ -19,7 +19,7 @@ func NewFeatureCollection() *FeatureCollection {
 func (f *FeatureCollection) Add(id interface{}, geo interface{}, properties map[string]interface{}) error {
 	var feature *geojson.Feature
 	switch g := geo.(type) {
-	case GEOM:
+	case Primitive:
 		gt, er := g.ToGeom()
 		if er != nil {
 			return er

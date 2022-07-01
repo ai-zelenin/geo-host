@@ -17,9 +17,18 @@ type Data interface {
 	Value() (driver.Value, error)
 }
 
-type GEOM interface {
+type Primitive interface {
 	ToGeom() (geom.T, error)
 	FromGeom(t geom.T) error
+}
+
+type Geographic interface {
+	SRID() int
+}
+
+type Point interface {
+	X() float64
+	Y() float64
 }
 
 type Projection interface {
