@@ -25,7 +25,7 @@ func NewGeographicSystem(cfg *Config) *GeographicSystem {
 	}
 }
 
-func (g *GeographicSystem) WGS84ToQuadKey(lat, long float64) QuadKey {
+func (g *GeographicSystem) CoordinatesToQuadKey(lat, long float64) QuadKey {
 	gpx, gpy := g.Projection.ToGlobalPixels(lat, long, g.cfg.MaxZoom)
 	tx, ty := g.TileSystem.GlobalPixelsToTileXY(gpx, gpy)
 	return g.QuadKeySystem.TileXYToQuadKey(tx, ty, g.cfg.MaxZoom)

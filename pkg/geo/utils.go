@@ -4,28 +4,9 @@ import (
 	"fmt"
 	"github.com/twpayne/go-geom"
 	"github.com/twpayne/go-geom/encoding/wkt"
-	"math"
 	"strconv"
 	"strings"
 )
-
-func CycleRestrict(value, min, max float64) float64 {
-	return value - math.Floor((value-min)/(max-min))*(max-min)
-}
-
-func Restrict(value, min, max float64) float64 {
-	return math.Max(math.Min(value, max), min)
-}
-
-const RadiansToDegreesFactor = 180 / math.Pi
-const DegreesToRadiansFactor = math.Pi / 180
-
-func RadiansToDegrees(x float64) float64 {
-	return x * RadiansToDegreesFactor
-}
-func DegreesToRadians(x float64) float64 {
-	return x * DegreesToRadiansFactor
-}
 
 func ParseAsFloatArray(line string) ([]float64, error) {
 	var result = make([]float64, 0)
@@ -74,12 +55,6 @@ func FromWKT(s string) geom.T {
 
 func Bits(val int64) string {
 	return strconv.FormatInt(val, 2)
-}
-
-// RoundToDigit rounds number to N digits after dot
-func RoundToDigit(v float64, n int) float64 {
-	var m = math.Pow(10, float64(n))
-	return math.RoundToEven(v*m) / m
 }
 
 const (

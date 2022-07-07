@@ -42,7 +42,7 @@ func (s *GeoSystemSuite) TestGlobalPixelConverter() {
 		if !s.Equal(ty, nty) {
 			return false
 		}
-		pointQk := s.gs.WGS84ToQuadKey(lat, lon)
+		pointQk := s.gs.CoordinatesToQuadKey(lat, lon)
 		if !s.gs.QuadKeySystem.Contains(pointQk, qk) {
 			s.Failf(
 				"quadkey of tile do not contains quadkey of point",
