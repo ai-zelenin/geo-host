@@ -31,10 +31,7 @@ func (p *GeographicPolygon) FromGeom(t geom.T) error {
 }
 
 func (p *GeographicPolygon) ToGeom() (geom.T, error) {
-	sridType := p.SRID
-	if sridType == 0 {
-		sridType = WGS84
-	}
+	srid := DefaultSRID(p.SRID)
 	coords := make([]geom.Coord, len(p.Points))
 	for i, point := range p.Points {
 		tp, err := point.ToGeom()
@@ -47,11 +44,13 @@ func (p *GeographicPolygon) ToGeom() (geom.T, error) {
 	if err != nil {
 		return nil, err
 	}
+	lr.SetSRID(int(srid))
 	polygon := geom.NewPolygon(geom.XY)
 	err = polygon.Push(lr)
 	if err != nil {
 		return nil, err
 	}
+	polygon.SetSRID(int(srid))
 	return polygon, nil
 }
 

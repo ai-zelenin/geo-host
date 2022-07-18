@@ -31,17 +31,20 @@ func (p *GeographicMultiPolygon) FromGeom(t geom.T) error {
 }
 
 func (p *GeographicMultiPolygon) ToGeom() (geom.T, error) {
-	sridType := p.SRID
-	if sridType == 0 {
-		sridType = WGS84
-	}
+	srid := DefaultSRID(p.SRID)
 	mp := geom.NewMultiPolygon(geom.XY)
+	mp.SetSRID(int(srid))
 	for _, polygon := range p.Polygons {
 		tp, err := polygon.ToGeom()
 		if err != nil {
 			return nil, err
 		}
-		err = mp.Push(geom.NewPolygonFlat(geom.XY, tp.FlatCoords(), tp.Ends()))
+		gp, ok := tp.(*geom.Polygon)
+		if !ok {
+			return nil, fmt.Errorf("unexpected type %T", tp)
+		}
+		gp.SetSRID(int(srid))
+		err = mp.Push(gp)
 		if err != nil {
 			return nil, err
 		}

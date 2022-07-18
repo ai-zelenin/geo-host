@@ -6,8 +6,8 @@ import (
 )
 
 type MapRequest struct {
-	*TileBBox
-	*BBox
+	TileBBox
+	BBox
 	Zoom         int64
 	CallbackID   string
 	Debug        bool

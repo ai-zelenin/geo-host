@@ -8,6 +8,13 @@ import (
 	"strings"
 )
 
+func DefaultSRID(srid SRID) SRID {
+	if srid == 0 {
+		srid = WGS84
+	}
+	return srid
+}
+
 func ParseAsFloatArray(line string) ([]float64, error) {
 	var result = make([]float64, 0)
 	parts := strings.Split(line, ",")
@@ -45,6 +52,7 @@ func ToWKT(g Primitive) string {
 	}
 	return data
 }
+
 func FromWKT(s string) geom.T {
 	g, err := wkt.Unmarshal(s)
 	if err != nil {
@@ -59,8 +67,6 @@ func Bits(val int64) string {
 
 const (
 	colorReset  = "\033[0m"
-	colorRed    = "\033[31m"
-	colorGreen  = "\033[32m"
 	colorYellow = "\033[33m"
 	colorBlue   = "\033[34m"
 )

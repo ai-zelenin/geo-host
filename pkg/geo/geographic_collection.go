@@ -35,7 +35,7 @@ func (p *GeographicCollection) ToGeom() (geom.T, error) {
 		sridType = WGS84
 	}
 	gc := geom.NewGeometryCollection()
-	gc.SetSRID(int(p.SRID))
+	gc.SetSRID(int(sridType))
 	for _, figure := range p.Figures {
 		gt, err := figure.ToGeom()
 		if err != nil {

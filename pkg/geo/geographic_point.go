@@ -25,11 +25,8 @@ func (p *GeographicPoint) FromGeom(t geom.T) error {
 }
 
 func (p *GeographicPoint) ToGeom() (geom.T, error) {
-	sridType := p.SRID
-	if sridType == 0 {
-		sridType = WGS84
-	}
-	return geom.NewPoint(geom.XY).SetSRID(int(sridType)).SetCoords([]float64{p.Latitude, p.Longitude})
+	srid := DefaultSRID(p.SRID)
+	return geom.NewPoint(geom.XY).SetSRID(int(srid)).SetCoords([]float64{p.Latitude, p.Longitude})
 }
 
 func (p *GeographicPoint) Scan(input interface{}) error {

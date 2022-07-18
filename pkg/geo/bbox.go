@@ -1,6 +1,8 @@
 package geo
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type BBox struct {
 	XMin float64
@@ -9,22 +11,22 @@ type BBox struct {
 	YMax float64
 }
 
-func NewBBox(coordsStr string) (*BBox, error) {
+func NewBBox(coordsStr string) (BBox, error) {
 	var xmin, ymin, xmax, ymax float64
 	if coordsStr != "" {
 		coords, err := ParseAsFloatArray(coordsStr)
 		if err != nil {
-			return nil, err
+			return BBox{}, fmt.Errorf("bbox parse error %w", err)
 		}
 		if len(coords) != 4 {
-			return nil, fmt.Errorf("invalid format of bbox coordinates [%s]", coordsStr)
+			return BBox{}, fmt.Errorf("invalid format of bbox coordinates [%s]", coordsStr)
 		}
 		xmin = coords[0]
 		ymin = coords[1]
 		xmax = coords[2]
 		ymax = coords[3]
 	}
-	return &BBox{
+	return BBox{
 		XMin: xmin,
 		XMax: xmax,
 		YMin: ymin,

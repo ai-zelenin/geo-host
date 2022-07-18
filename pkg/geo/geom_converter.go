@@ -14,6 +14,8 @@ func FromGeom(g geom.T) (Primitive, error) {
 		primitive = new(GeographicPolygon)
 	case *geom.GeometryCollection:
 		primitive = new(GeographicCollection)
+	case *geom.MultiPolygon:
+		primitive = new(GeographicMultiPolygon)
 	default:
 		return nil, fmt.Errorf("unexpected type %T", g)
 	}
